@@ -23,8 +23,8 @@ const Nav = () => {
             <p className="text-sm">Kariavattom, Thiruvananthapuram</p>
           </div>
         </div>
-        <nav className="flex space-x-4 md:space-x-10 mt-4 md:mt-0">
-          <a href="#" className="text-gray-600 hover:text-gray-800">Home</a>
+        <nav className="flex-wrap justify-evenly gap-3 flex md:space-x-10 mt-4 md:mt-0">
+          <a href="#" className="text-gray-600 hover:text-gray-800 ">Home</a>
           <div className="relative">
             <button
               onClick={() => handleDropdownToggle('academics')}
@@ -79,14 +79,14 @@ const Nav = () => {
           <a href="#" className="text-gray-600 hover:text-gray-800">About Us</a>
         </nav>
       </div>
-      <div className="bg-white border-t">
-        <div className="container mx-auto px-4 md:px-16 py-2 flex flex-wrap gap-4 justify-between">
-          <a href="#" className="text-gray-600 hover:text-gray-800">Associations</a>
-          <a href="#" className="text-gray-600 hover:text-gray-800">Admissions</a>
-          <a href="#" className="text-gray-600 hover:text-gray-800">PTA</a>
-          <a href="#" className="text-gray-600 hover:text-gray-800">Placements</a>
-          <a href="#" className="text-gray-600 hover:text-gray-800">Students Portal</a>
-          <a href="#" className="text-gray-600 hover:text-gray-800">Cells & Committees</a>
+      <div className="bg-white border-t flex justify-center">
+      <div className="container mx-auto  md:px-16 py-2 flex flex-wrap space-x-3 gap-y-2 justify-center  ">
+          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:pr-0 md:border-none md:pr-4 md:last:border-none">Associations</a>
+          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:pr-0 md:border-none md:pr-4 md:last:border-none">Admissions</a>
+          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:pr-0 md:border-none md:pr-4 md:last:border-none">PTA</a>
+          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:pr-0 md:border-none md:pr-4 md:last:border-none">Placements</a>
+          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:pr-0 md:border-none md:pr-4 md:last:border-none">Students Portal</a>
+          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:pr-0 md:border-none md:pr-4 md:last:border-none">Cells & Committees</a>
           <span className="text-gray-400 hidden md:inline">Yet to be filled</span>
           <span className="text-gray-400 hidden md:inline">Yet to be filled</span>
           <span className="text-gray-400 hidden md:inline">Yet to be filled</span>

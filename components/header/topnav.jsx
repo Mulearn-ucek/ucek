@@ -23,7 +23,7 @@ const TopNavbar = () => {
               />
             </svg>
           </svg>
-          <span>+91 471 2308874</span>
+          <span className="text-sm md:text-[1rem]">+91 471 2308874</span>
         </div>
         <div className="flex items-center space-x-2">
           <svg
@@ -48,17 +48,17 @@ const TopNavbar = () => {
               />
             </svg>
           </svg>
-          <span>ucekprincipal@gmail.com</span>
+          <span className="text-sm md:text-[1rem]">ucekprincipal@gmail.com</span>
         </div>
       </div>
       <div className=" hidden md:mr-32 md:flex flex justify-center">
         <span className="font-semibold">University Of Kerala</span>
       </div>
       <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-5">
-        <span>Follow Us</span>
+        <span className="text-sm md:text-[1rem]">Follow Us</span>
         <div className="flex space-x-2">
           <svg
-            className="w-5 h-5 text-red-500"
+            className="w-4 h-4 text-red-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -76,7 +76,7 @@ const TopNavbar = () => {
             </svg>
           </svg>
           <svg
-            className="w-5 h-5 text-red-500"
+            className="w-4 h-4 text-red-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -94,7 +94,7 @@ const TopNavbar = () => {
             </svg>
           </svg>
           <svg
-            className="w-5 h-5 text-red-500"
+            className="w-4 h-4 text-red-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
