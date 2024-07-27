@@ -1,9 +1,12 @@
 'use client'
 import React, { use, useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation'
 import Logo from '@/public/img/logo.png';
+import Image from 'next/image';
 
 const Nav = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
+  const pathname = usePathname()
 
   const handleDropdownToggle = (menu) => {
     setOpenDropdown(openDropdown === menu ? null : menu);
@@ -13,7 +16,7 @@ const Nav = () => {
     <header className="bg-white border-b z-30 relative">
       <div className="container mx-auto py-4 px-4 md:px-16 flex flex-wrap items-center justify-between">
         <div className="flex items-center space-x-4">
-          <img
+          <Image
             src={Logo.src}
             alt="University of Kerala Logo"
             className="h-12"
@@ -24,7 +27,7 @@ const Nav = () => {
           </div>
         </div>
         <nav className="flex-wrap justify-evenly gap-3 flex md:space-x-10 mt-4 md:mt-0">
-          {location && location.pathname != "/" && <a href="/" className="text-gray-600 hover:text-gray-800 ">Home</a>}
+          {pathname != "/" && <a href="/" className="text-gray-600 hover:text-gray-800 ">Home</a>}
           <div className="relative">
             <button
               onClick={() => handleDropdownToggle('academics')}
