@@ -11,7 +11,7 @@ const Nav = () => {
 
   return (
     <header className="bg-white border-b">
-      <div className="container mx-auto py-4 px-4 md:px-6 flex flex-wrap items-center justify-between">
+      <div className="container mx-auto py-4 px-4 md:px-16 flex flex-wrap items-center justify-between">
         <div className="flex items-center space-x-4">
           <img
             src={Logo.src}
@@ -79,8 +79,8 @@ const Nav = () => {
           <a href="#" className="text-gray-600 hover:text-gray-800">About Us</a>
         </nav>
       </div>
-      <div className="bg-white border-t flex justify-center">
-      <div className="container mx-auto  md:px-16 py-2 flex flex-wrap space-x-3 gap-y-2 justify-center  ">
+      <div className="bg-white border-t">
+      <div className="container mx-auto  md:px-16 py-2 flex flex-wrap space-x-3 gap-y-2 justify-center md:justify-evenly ">
           <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:pr-0 md:border-none md:pr-4 md:last:border-none">Associations</a>
           <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:pr-0 md:border-none md:pr-4 md:last:border-none">Admissions</a>
           <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:pr-0 md:border-none md:pr-4 md:last:border-none">PTA</a>
