@@ -1,6 +1,6 @@
 'use client'
-import React, { useState } from 'react';
-import Logo from '@/components/image/logo.png';
+import React, { use, useEffect, useState } from 'react';
+import Logo from '@/public/img/logo.png';
 
 const Nav = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -10,7 +10,7 @@ const Nav = () => {
   };
 
   return (
-    <header className="bg-white border-b">
+    <header className="bg-white border-b z-30 relative">
       <div className="container mx-auto py-4 px-4 md:px-16 flex flex-wrap items-center justify-between">
         <div className="flex items-center space-x-4">
           <img
@@ -24,7 +24,7 @@ const Nav = () => {
           </div>
         </div>
         <nav className="flex-wrap justify-evenly gap-3 flex md:space-x-10 mt-4 md:mt-0">
-          <a href="#" className="text-gray-600 hover:text-gray-800 ">Home</a>
+          {location && location.pathname != "/" && <a href="/" className="text-gray-600 hover:text-gray-800 ">Home</a>}
           <div className="relative">
             <button
               onClick={() => handleDropdownToggle('academics')}
@@ -55,8 +55,11 @@ const Nav = () => {
             <div
               className={`absolute left-0 mt-2 w-40 bg-white border z-10 shadow-lg ${openDropdown === 'departments' ? 'block' : 'hidden'}`}
             >
-              <a href="#" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">Submenu 1</a>
-              <a href="#" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">Submenu 2</a>
+              <a href="/dept/cse" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">Computer Science &amp; Engineering</a>
+              <a href="/dept/ece" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">Electronics &amp; Communication Engineering</a>
+              <a href="/dept/it" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">Information Technolog</a>
+              <a href="/dept/gen" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">General Departments</a>
+
             </div>
           </div>
           <div className="relative">
@@ -81,12 +84,12 @@ const Nav = () => {
       </div>
       <div className="bg-white border-t">
       <div className="container mx-auto  md:px-16 py-2 flex flex-wrap space-x-3 gap-y-2 justify-center md:justify-evenly ">
-          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:pr-0 md:border-none md:pr-4 md:last:border-none">Associations</a>
-          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:pr-0 md:border-none md:pr-4 md:last:border-none">Admissions</a>
-          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:pr-0 md:border-none md:pr-4 md:last:border-none">PTA</a>
-          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:pr-0 md:border-none md:pr-4 md:last:border-none">Placements</a>
-          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:pr-0 md:border-none md:pr-4 md:last:border-none">Students Portal</a>
-          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:pr-0 md:border-none md:pr-4 md:last:border-none">Cells & Committees</a>
+          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:border-none md:pr-4 md:last:border-none">Associations</a>
+          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:border-none md:pr-4 md:last:border-none">Admissions</a>
+          <a href="/pta" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:border-none md:pr-4 md:last:border-none">PTA</a>
+          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:border-none md:pr-4 md:last:border-none">Placements</a>
+          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:border-none md:pr-4 md:last:border-none">Students Portal</a>
+          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:border-none md:pr-4 md:last:border-none">Cells & Committees</a>
           <span className="text-gray-400 hidden md:inline">Yet to be filled</span>
           <span className="text-gray-400 hidden md:inline">Yet to be filled</span>
           <span className="text-gray-400 hidden md:inline">Yet to be filled</span>

@@ -2,19 +2,15 @@ import React from "react";
 
 const TopNavbar = () => {
   return (
-    <div className="bg-gray-800 text-white flex flex md:flex-row items-center justify-between py-4 px-6 md:px-16">
+    <div className="bg-gray-800 text-white flex relative md:flex-row items-center justify-between py-4 px-6 md:px-16 z-30">
       <div className="flex flex-col md:flex-row items-start space-y-2 md:space-y-0 md:space-x-4">
         <div className="flex items-center space-x-2">
-          <svg
-            className="w-5 h-5 text-red-500"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
             <svg
+              className="w-5 h-5 text-red-500"
+              fill="currentColor"
               width="18"
               height="18"
               viewBox="0 0 18 18"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -22,20 +18,15 @@ const TopNavbar = () => {
                 fill="#E74D3C"
               />
             </svg>
-          </svg>
           <span className="text-sm md:text-[1rem]">+91 471 2308874</span>
         </div>
         <div className="flex items-center space-x-2">
-          <svg
-            className="w-5 h-5 text-red-500"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
             <svg
+            className="w-5 h-5 items-center flex text-red-500"
               width="16"
               height="12"
+              fill="currentColor"
               viewBox="0 0 16 12"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -46,13 +37,13 @@ const TopNavbar = () => {
                 d="M8.17875 6.47223L8.08313 6.5172H8.03813C7.98633 6.54032 7.93133 6.55549 7.875 6.56217C7.82831 6.56805 7.78107 6.56805 7.73438 6.56217H7.68937L7.59375 6.5172L0.0562499 1.64886C0.0202377 1.78464 0.0013414 1.92439 0 2.06486V9.93516C0 10.3824 0.17779 10.8114 0.494257 11.1277C0.810725 11.444 1.23995 11.6216 1.6875 11.6216H14.0625C14.5101 11.6216 14.9393 11.444 15.2557 11.1277C15.5722 10.8114 15.75 10.3824 15.75 9.93516V2.06486C15.7487 1.92439 15.7298 1.78464 15.6937 1.64886L8.17875 6.47223Z"
                 fill="#E74D3C"
               />
-            </svg>
           </svg>
           <span className="text-sm md:text-[1rem]">ucekprincipal@gmail.com</span>
         </div>
       </div>
-      <div className=" hidden md:mr-32 md:flex flex justify-center">
-        <span className="font-semibold">University Of Kerala</span>
+      <div className=" md:mr-32 md:flex flex justify-center">
+        Owned By
+        <a href="https://keralauniversity.ac.in" target="_blank" className="font-semibold ml-1">University Of Kerala</a>
       </div>
       <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-5">
         <span className="text-sm md:text-[1rem]">Follow Us</span>
