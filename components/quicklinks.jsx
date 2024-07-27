@@ -17,11 +17,11 @@ const Quick = () => {
 
   return (
     <div className="flex flex-col md:flex-row bg-white w-full h-auto md:h-[65vh] justify-center items-center gap-8 md:gap-40 p-8 md:p-20 space-y-8 md:space-y-0">
-      <div className="space-y-4 flex-col items-center px-4 justify-center">
-        <h2 className="text-2xl md:text-[2rem] font-bold flex items-center mb-6">
+      <div className="space-y-4 flex-col items-center justify-center">
+        <h2 className="text-[2rem] font-bold flex items-center mb-6">
           <span className="w-2 h-6 bg-blue-500 mr-2"></span> Quick Links
         </h2>
-        <div className="bg-blue-100 w-[90vw] p-4 rounded">
+        <div className="bg-blue-100 w-[90vw] md:w-[320px] p-4 rounded">
           <button
             onClick={() => toggleDropdown('news')}
             className="w-full text-left"
