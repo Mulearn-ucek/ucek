@@ -33,6 +33,6 @@ export function getCarouselImages(n="10"): Promise<string[][]> {
   const url = "https://docs.google.com/spreadsheets/d/"
               + SHEET_ID
               + "/gviz/tq?tqx=out:csv&sheet=carousel&tq=" 
-              + encodeURIComponent("select `B`, `C` limit "+n);
+              + encodeURIComponent("select B, C, D limit "+n);
   return getData(url)
 }

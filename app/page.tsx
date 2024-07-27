@@ -9,6 +9,7 @@ import AdministrationPanel from '@/components/layout/admins'
 import MoreUcek from '@/components/layout/ucekmore'
 import Footer from '@/components/layout/footer'
 import Link from "next/link";
+import HeroSlider from "@/components/layout/landing";
 
 export default function Home() {
   return (
