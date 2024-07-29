@@ -84,7 +84,7 @@ const Nav = () => {
     <header className="bg-white border-b z-30 h-[205px] flex items-center flex-col">
       <div className="w-full py-4 px-2 md:px-16 md:h-[155px] flex flex-col md:flex-row items-center justify-between">
         <div className="flex items-center space-x-4">
-          <img
+          <Image
             src={Logo.src}
             alt="University of Kerala Logo"
             className="h-[50px] w-[50px] md:h-[93px] md:w-[93px]"

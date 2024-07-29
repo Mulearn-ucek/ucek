@@ -9,18 +9,19 @@ import Footer from '@/components/layout/footer'
 import Image from 'next/image'
 import ucekImage from "@/public/img/ucek.jpeg";
 
-const postsDirectory = path.join(process.cwd(), 'contents')
+const postsDirectory = path.join(process.cwd(), 'contents', 'dept')
 
 export async function generateStaticParams() {
   const fileNames = fs.readdirSync(postsDirectory)
 
+  console.log(fileNames)
   return fileNames.map((fileName) => ({
-    slug: fileName.replace(/\.md$/, ''),
+    id: fileName.replace(/\.md$/, ''),
   }))
 }
 
 export async function generateMetadata({ params } : { params: { id: string } }) {
-  const fullPath = path.join(postsDirectory,'dept', `${params.id}.md`)
+  const fullPath = path.join(postsDirectory, `${params.id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   
     // Remove the first line of the file and get it
@@ -35,7 +36,7 @@ export async function generateMetadata({ params } : { params: { id: string } }) 
 
 export default async function Post({ params } : { params: { id: string } }) {
 
-  const fullPath = path.join(postsDirectory,'dept', `${params.id}.md`)
+  const fullPath = path.join(postsDirectory, `${params.id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
 
   // Remove the first line of the file and get it
