@@ -15,8 +15,7 @@ const postsDirectory = path.join(process.cwd(), 'contents', 'departments')
 
 export async function generateStaticParams() {
   const fileNames = fs.readdirSync(postsDirectory)
-
-  console.log(fileNames)
+  
   return fileNames.map((fileName) => ({
     id: fileName.replace(/\.md$/, ''),
   }))
