@@ -2,7 +2,7 @@ import Image from "next/image";
 import Topnav from '@/components/header/topnav';
 import Nav from '@/components/header/nav'
 import Landing from '@/components/layout/landing'
-import Quick from '@/components/layout/quicklinks'
+import Quick from '@/components/layout/announcement'
 import Whyucek from '@/components/layout/whyucek'
 import NewsEvents from '@/components/layout/events'
 import AdministrationPanel from '@/components/layout/admins'
