@@ -1,51 +1,32 @@
+import { Mail, Phone } from "lucide-react";
 import React from "react";
 
 const TopNavbar = () => {
   return (
-    <div className="bg-gray-800 text-white hidden md:flex relative md:flex-row items-center justify-between py-4 px-6 md:px-16 z-30">
-      <div className="flex flex-col md:flex-row items-start space-y-2 md:space-y-0 md:space-x-4">
-        <div className="flex items-center space-x-2">
-            <svg
-              className="w-5 h-5 text-red-500"
-              fill="currentColor"
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7.29238 4.13327C7.0581 1.43839 4.24669 0.116099 4.12771 0.0621278C4.01648 0.00984168 3.89183 -0.00686369 3.77076 0.0142898C0.525136 0.552775 0.0369424 2.44176 0.0173166 2.52027C-0.00938527 2.62966 -0.00513834 2.74433 0.0295827 2.85145C3.90078 14.8625 11.9462 17.0888 14.5907 17.8211C14.7944 17.8775 14.9624 17.9229 15.09 17.9646C15.2356 18.0122 15.3937 18.003 15.5328 17.9388C15.6137 17.902 17.5248 17.0017 17.9922 14.0652C18.0129 13.937 17.9923 13.8055 17.9333 13.6898C17.8916 13.6089 16.8919 11.7064 14.1197 11.0342C14.0257 11.0102 13.9272 11.0093 13.8328 11.0318C13.7383 11.0542 13.6507 11.0992 13.5776 11.163C12.703 11.91 11.4948 12.7061 10.9735 12.7883C7.47883 11.0796 5.52728 7.80085 5.45368 7.17896C5.41075 6.82937 6.21173 5.60153 7.13292 4.60306C7.19082 4.54022 7.23492 4.46596 7.26238 4.38505C7.28985 4.30413 7.30006 4.21837 7.29238 4.13327Z"
-                fill="#E74D3C"
-              />
-            </svg>
-          <span className="text-sm md:text-[1rem]">+91 471 2308874</span>
+    <div className="bg-gray-800 text-white flex relative flex-row items-center justify-between md:py-4 py-2 px-6 md:px-16 z-30">
+      <div className="flex items-start gap-8">
+        <div className="flex items-center gap-2">
+          <Phone color="#E74D3C" className="w-4 md:w-6"/>
+          <span className="text-[12px] md:text-[1rem]">+91 471 2308874</span>
         </div>
-        <div className="flex items-center space-x-2">
-            <svg
-            className="w-5 h-5 items-center flex text-red-500"
-              width="16"
-              height="12"
-              fill="currentColor"
-              viewBox="0 0 16 12"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7.87503 5.33102L15.0638 0.715648C14.7748 0.498998 14.4238 0.380767 14.0625 0.378349H1.68753C1.32626 0.380767 0.975296 0.498998 0.686279 0.715648L7.87503 5.33102Z"
-                fill="#E74D3C"
-              />
-              <path
-                d="M8.17875 6.47223L8.08313 6.5172H8.03813C7.98633 6.54032 7.93133 6.55549 7.875 6.56217C7.82831 6.56805 7.78107 6.56805 7.73438 6.56217H7.68937L7.59375 6.5172L0.0562499 1.64886C0.0202377 1.78464 0.0013414 1.92439 0 2.06486V9.93516C0 10.3824 0.17779 10.8114 0.494257 11.1277C0.810725 11.444 1.23995 11.6216 1.6875 11.6216H14.0625C14.5101 11.6216 14.9393 11.444 15.2557 11.1277C15.5722 10.8114 15.75 10.3824 15.75 9.93516V2.06486C15.7487 1.92439 15.7298 1.78464 15.6937 1.64886L8.17875 6.47223Z"
-                fill="#E74D3C"
-              />
-          </svg>
-          <span className="text-sm md:text-[1rem]">ucekprincipal@gmail.com</span>
+        <div className="items-center gap-2 md:flex hidden">
+          <Mail color="#E74D3C" />
+          <span className="text-sm md:text-[1rem]">
+            ucekprincipal@gmail.com
+          </span>
         </div>
       </div>
-      <div className=" md:mr-32 md:flex flex justify-center">
-        <a href="https://keralauniversity.ac.in" target="_blank" className="font-semibold ml-1">University Of Kerala</a>
+      <div className=" md:mr-32 justify-center md:flex hidden">
+        <a
+          href="https://keralauniversity.ac.in"
+          target="_blank"
+          className="font-semibold ml-1"
+        >
+          University Of Kerala
+        </a>
       </div>
-      <div className="md:flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-5 hidden">
-        <span className="text-sm md:text-[1rem]">Follow Us</span>
+      <div className="flex items-center md:space-y-0 md:space-x-5 gap-4">
+        <span className="text-[12px] md:text-[1rem] hidden md:visible">Follow Us</span>
         <div className="flex space-x-2">
           <svg
             className="w-4 h-4 text-red-500"
