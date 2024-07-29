@@ -42,7 +42,6 @@ const TopNavbar = () => {
         </div>
       </div>
       <div className=" md:mr-32 md:flex flex justify-center">
-        Owned By
         <a href="https://keralauniversity.ac.in" target="_blank" className="font-semibold ml-1">University Of Kerala</a>
       </div>
       <div className="md:flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-5 hidden">
