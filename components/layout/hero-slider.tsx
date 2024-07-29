@@ -25,7 +25,7 @@ export function HeroSlider() {
   }, []);
   
   return (
-    <section className="w-full">
+    <section className="w-full mt-[6rem] sm:mt-3 md:mt-0">
       <Carousel className="w-full" plugins={[
         Autoplay({
           delay: 3000,
@@ -40,7 +40,7 @@ export function HeroSlider() {
                 width={1920}
                 height={1080}
                 alt="University College of Engineering Kariavattom"
-                className="h-[600px] w-full object-cover"
+                className="h-[656px] w-full object-cover"
               />
                <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 bg-gradient-to-t from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.1)]">
                 <div className="space-y-2 text-center text-primary-foreground">
@@ -60,7 +60,7 @@ export function HeroSlider() {
                   width={1920}
                   height={1080}
                   alt={image[1]}
-                  className="h-[600px] w-full object-cover"
+                  className="h-[656px] w-full object-cover"
                 />
                 <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 bg-gradient-to-t from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.1)]">
                 <div className="space-y-2 text-center text-primary-foreground">

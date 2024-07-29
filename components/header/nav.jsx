@@ -1,98 +1,275 @@
-'use client'
-import React, { use, useEffect, useState } from 'react';
-import Logo from '@/public/img/logo.png';
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+import Logo from "@/public/img/logo.png";
+import {
+  BookOpenCheck,
+  BusFront,
+  CodeXml,
+  Cpu,
+  Network,
+  NotebookPen,
+  SwatchBook,
+  Utensils,
+} from "lucide-react";
 
 const Nav = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
+  const dropdownRef = useRef(null);
+  const menu = [
+    {
+      id: 1,
+      title: "Associations",
+      link: "",
+    },
+    {
+      id: 2,
+      title: "Admissions",
+      link: "",
+    },
+    {
+      id: 3,
+      title: "PTA",
+      link: "",
+    },
+    {
+      id: 4,
+      title: "Placements",
+      link: "",
+    },
+    {
+      id: 5,
+      title: "Students Portal",
+      link: "",
+    },
+    {
+      id: 6,
+      title: "Cells & Committes",
+      link: "",
+    },
+    {
+      id: 7,
+      title: "Achievements",
+      link: "",
+    },
+    {
+      id: 8,
+      title: "Image Gallery",
+      link: "",
+    },
+    {
+      id: 9,
+      title: "Histroy",
+      link: "",
+    },
+  ];
 
   const handleDropdownToggle = (menu) => {
     setOpenDropdown(openDropdown === menu ? null : menu);
   };
 
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setOpenDropdown(null);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <header className="bg-white border-b z-30 relative">
-      <div className="container mx-auto py-4 px-4 md:px-16 flex flex-wrap items-center justify-between">
+    <header className="bg-white border-b z-30 h-[205px] flex items-center flex-col">
+      <div className="w-full py-4 px-2 md:px-16 md:h-[155px] flex flex-col md:flex-row items-center justify-between">
         <div className="flex items-center space-x-4">
           <img
             src={Logo.src}
             alt="University of Kerala Logo"
-            className="h-12"
+            className="h-[50px] w-[50px] md:h-[93px] md:w-[93px]"
           />
           <div>
-            <h1 className="text-lg font-bold">University College Of Engineering</h1>
-            <p className="text-sm">Kariavattom, Thiruvananthapuram</p>
+            <h1 className="text-lg font-bold text-[17.99px] md:text-[31.99px]">
+              University College Of Engineering
+            </h1>
+            <p className="text-sm text-[12px] md:text-[16px]">
+              Kariavattom, Thiruvananthapuram
+            </p>
           </div>
         </div>
-        <nav className="flex-wrap justify-evenly gap-3 flex md:space-x-10 mt-4 md:mt-0">
-          {location && location.pathname != "/" && <a href="/" className="text-gray-600 hover:text-gray-800 ">Home</a>}
+        <nav className="flex-wrap justify-evenly gap-3 flex md:space-x-10 mt-4 md:mt-0 text-[14px] md:text-[17.62px] font-[500]">
+          {location && location.pathname != "/" && (
+            <a href="/" className="text-gray-600 hover:text-gray-800">
+              Home
+            </a>
+          )}
           <div className="relative">
             <button
-              onClick={() => handleDropdownToggle('academics')}
+              onClick={() => handleDropdownToggle("academics")}
               className="text-gray-600 hover:text-gray-800 flex items-center"
             >
               Academics
-              <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+              <svg
+                className="w-3 h-3 ml-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                />
               </svg>
             </button>
             <div
-              className={`absolute left-0 mt-2 w-40 bg-white border z-10 shadow-lg ${openDropdown === 'academics' ? 'block' : 'hidden'}`}
+              ref={dropdownRef}
+              className={`absolute left-0 mt-2 w-40 bg-white border rounded-xl md:text-[16px] text-[12px] z-10 shadow-lg ${
+                openDropdown === "academics" ? "block" : "hidden"
+              }`}
             >
-              <a href="#" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">Submenu 1</a>
-              <a href="#" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">Submenu 2</a>
+              <a
+                href="#"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                
+                <SwatchBook className="md:w-8 w-5" />
+                Syllabus
+              </a>
+              <a
+                href="#"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                <NotebookPen className="md:w-8 w-5"/>
+                Notes
+              </a>
             </div>
           </div>
-          <div className="relative">
-            <button
-              onClick={() => handleDropdownToggle('departments')}
-              className="text-gray-600 hover:text-gray-800 flex items-center"
-            >
-              Departments
-              <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            <div
-              className={`absolute left-0 mt-2 w-40 bg-white border z-10 shadow-lg ${openDropdown === 'departments' ? 'block' : 'hidden'}`}
-            >
-              <a href="/dept/cse" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">Computer Science &amp; Engineering</a>
-              <a href="/dept/ece" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">Electronics &amp; Communication Engineering</a>
-              <a href="/dept/it" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">Information Technolog</a>
-              <a href="/dept/gen" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">General Departments</a>
 
-            </div>
-          </div>
           <div className="relative">
             <button
-              onClick={() => handleDropdownToggle('facilities')}
+              onClick={() => handleDropdownToggle("facilities")}
               className="text-gray-600 hover:text-gray-800 flex items-center"
             >
               Facilities
-              <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+              <svg
+                className="w-3 h-3 ml-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                />
               </svg>
             </button>
             <div
-              className={`absolute left-0 mt-2 w-40 bg-white border z-10 shadow-lg ${openDropdown === 'facilities' ? 'block' : 'hidden'}`}
+              ref={dropdownRef}
+              className={`absolute left-0 mt-2 w-40 bg-white border rounded-xl md:text-[16px] text-[12px] z-10 shadow-lg ${
+                openDropdown === "facilities" ? "block" : "hidden"
+              }`}
             >
-              <a href="#" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">Submenu 1</a>
-              <a href="#" className="block px-4 py-2 text-gray-600 hover:bg-gray-100">Submenu 2</a>
+              <a
+                href="#"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                <BusFront className="md:w-8 w-5" />
+                College Bus
+              </a>
+              <a
+                href="#"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                <Utensils className="md:w-8 w-5" />
+                Canteen
+              </a>
             </div>
           </div>
-          <a href="#" className="text-gray-600 hover:text-gray-800">About Us</a>
+          <div className="relative">
+            <button
+              onClick={() => handleDropdownToggle("departments")}
+              className="text-gray-600 hover:text-gray-800 flex items-center "
+            >
+              Departments
+              <svg
+                className="w-3 h-3 ml-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              ref={dropdownRef}
+              className={`origin-top-right absolute right-0 md:left-0 mt-2 w-72 bg-white border rounded-xl md:text-[16px] text-[12px] z-10 shadow-lg ${
+                openDropdown === "departments" ? "block" : "hidden"
+              }`}
+            >
+              <a
+                href="/dept/cse"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                <CodeXml className="md:w-8 w-5"/>
+                Computer Science &amp; Engineering
+              </a>
+              <a
+                href="/dept/ece"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                <Cpu className="md:w-8 w-5"/>
+                Electronics &amp; Communication Engineering
+              </a>
+              <a
+                href="/dept/it"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                <Network className="md:w-8 w-5"/>
+                Information Technology
+              </a>
+              <a
+                href="/dept/gen"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                <BookOpenCheck className="md:w-8 w-5"/>
+                General Departments
+              </a>
+            </div>
+          </div>
+          <a href="#" className="text-gray-600 hover:text-gray-800">
+            About Us
+          </a>
         </nav>
       </div>
-      <div className="bg-white border-t">
-      <div className="container mx-auto  md:px-16 py-2 flex flex-wrap space-x-3 gap-y-2 justify-center md:justify-evenly ">
-          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:border-none md:pr-4 md:last:border-none">Associations</a>
-          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:border-none md:pr-4 md:last:border-none">Admissions</a>
-          <a href="/pta" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:border-none md:pr-4 md:last:border-none">PTA</a>
-          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:border-none md:pr-4 md:last:border-none">Placements</a>
-          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:border-none md:pr-4 md:last:border-none">Students Portal</a>
-          <a href="#" className="text-gray-600 hover:text-gray-800 border-r border-gray-300 pr-2 md:border-none md:pr-4 md:last:border-none">Cells & Committees</a>
-          <span className="text-gray-400 hidden md:inline">Yet to be filled</span>
-          <span className="text-gray-400 hidden md:inline">Yet to be filled</span>
-          <span className="text-gray-400 hidden md:inline">Yet to be filled</span>
+      <div className="md:h-[50px] bg-white border-t-[1.8px] border-[#2D3E50] w-full flex items-center ">
+        <div className="w-full px-5 md:px-4 md:py-0 mt-2 md:mt-0 flex flex-wrap justify-center md:justify-evenly ">
+          {menu.map((item, idx) => (
+            <div className="flex items-center">
+              <a
+                key={item.id}
+                href={item.link}
+                className="text-[#2D3E50] text-[12px] md:text-[14px] hover:text-gray-800 font-[600] border-gray-300 md:border-none md:last:border-none"
+              >
+                {item.title}
+              </a>
+              {idx < menu.length - 1 && (
+                <span className="mx-2 visible md:hidden text-gray-300">•</span>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </header>
