@@ -11,10 +11,12 @@ import {
   SwatchBook,
   Utensils,
 } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 const Nav = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
   const dropdownRef = useRef(null);
+  const pathname = usePathname()
   const menu = [
     {
       id: 1,
@@ -84,7 +86,7 @@ const Nav = () => {
     <header className="bg-white border-b z-30 h-[205px] flex items-center flex-col">
       <div className="w-full py-4 px-2 md:px-16 md:h-[155px] flex flex-col md:flex-row items-center justify-between">
         <div className="flex items-center space-x-4">
-          <Image
+          <img
             src={Logo.src}
             alt="University of Kerala Logo"
             className="h-[50px] w-[50px] md:h-[93px] md:w-[93px]"
@@ -99,7 +101,7 @@ const Nav = () => {
           </div>
         </div>
         <nav className="flex-wrap justify-evenly gap-3 flex md:space-x-10 mt-4 md:mt-0 text-[14px] md:text-[17.62px] font-[500]">
-          {location && location.pathname != "/" && (
+          { pathname != "/" && (
             <a href="/" className="text-gray-600 hover:text-gray-800">
               Home
             </a>
@@ -257,7 +259,7 @@ const Nav = () => {
       <div className="md:h-[50px] bg-white border-t-[1.8px] border-[#2D3E50] w-full flex items-center ">
         <div className="w-full px-5 md:px-4 md:py-0 mt-2 md:mt-0 flex flex-wrap justify-center md:justify-evenly ">
           {menu.map((item, idx) => (
-            <div className="flex items-center">
+            <div key={`p${idx}`} className="flex items-center">
               <a
                 key={item.id}
                 href={item.link}

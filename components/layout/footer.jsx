@@ -29,6 +29,7 @@ const Footer = () => {
                 University College Of Engineering
               </h1>
               <p className="text-sm">Kariavattom, Thiruvananthapuram</p>
+            </div>
           </div>
         </div>
         <div className="bg-white border-t mt-4">
