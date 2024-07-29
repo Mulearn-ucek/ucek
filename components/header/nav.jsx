@@ -1,11 +1,20 @@
 "use client";
-import React, { use, useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Logo from "@/public/img/logo.png";
-import { NotebookPen, SwatchBook } from "lucide-react";
+import {
+  BookOpenCheck,
+  BusFront,
+  CodeXml,
+  Cpu,
+  Network,
+  NotebookPen,
+  SwatchBook,
+  Utensils,
+} from "lucide-react";
 
 const Nav = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
-
+  const dropdownRef = useRef(null);
   const menu = [
     {
       id: 1,
@@ -53,9 +62,23 @@ const Nav = () => {
       link: "",
     },
   ];
+
   const handleDropdownToggle = (menu) => {
     setOpenDropdown(openDropdown === menu ? null : menu);
   };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setOpenDropdown(null);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <header className="bg-white border-b z-30 h-[205px] flex items-center flex-col">
@@ -103,6 +126,7 @@ const Nav = () => {
               </svg>
             </button>
             <div
+              ref={dropdownRef}
               className={`absolute left-0 mt-2 w-40 bg-white border rounded-xl text-[16px] z-10 shadow-lg ${
                 openDropdown === "academics" ? "block" : "hidden"
               }`}
@@ -145,32 +169,37 @@ const Nav = () => {
               </svg>
             </button>
             <div
-              className={`absolute left-0 mt-2 w-40 bg-white border z-10 shadow-lg ${
+              ref={dropdownRef}
+              className={`absolute left-0 mt-2 w-72 bg-white border rounded-xl text-[16px] z-10 shadow-lg ${
                 openDropdown === "departments" ? "block" : "hidden"
               }`}
             >
               <a
                 href="/dept/cse"
-                className="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
+                <CodeXml />
                 Computer Science &amp; Engineering
               </a>
               <a
                 href="/dept/ece"
-                className="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
+                <Cpu />
                 Electronics &amp; Communication Engineering
               </a>
               <a
                 href="/dept/it"
-                className="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
-                Information Technolog
+                <Network />
+                Information Technology
               </a>
               <a
                 href="/dept/gen"
-                className="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
+                <BookOpenCheck />
                 General Departments
               </a>
             </div>
@@ -197,21 +226,24 @@ const Nav = () => {
               </svg>
             </button>
             <div
-              className={`absolute left-0 mt-2 w-40 bg-white border z-10 shadow-lg ${
+              ref={dropdownRef}
+              className={`absolute left-0 mt-2 w-40 bg-white border rounded-xl text-[16px] z-10 shadow-lg ${
                 openDropdown === "facilities" ? "block" : "hidden"
               }`}
             >
               <a
                 href="#"
-                className="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
-                Submenu 1
+                <BusFront />
+                College Bus
               </a>
               <a
                 href="#"
-                className="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
-                Submenu 2
+                <Utensils />
+                Canteen
               </a>
             </div>
           </div>
