@@ -10,12 +10,13 @@ import Image from 'next/image'
 import ucekImage from "@/public/img/ucek.jpeg";
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import rehypeRaw from 'rehype-raw'
 
 const postsDirectory = path.join(process.cwd(), 'contents', 'departments')
 
 export async function generateStaticParams() {
   const fileNames = fs.readdirSync(postsDirectory)
-  
+
   return fileNames.map((fileName) => ({
     id: fileName.replace(/\.md$/, ''),
   }))
@@ -55,16 +56,16 @@ export default async function Post({ params } : { params: { id: string } }) {
       className="h-[300px] w-full object-cover brightness-50"
     />
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">
-          <h1 className="text-4xl font-bold text-primary-foreground sm:text-5xl md:text-6xl">
+          <h3 className="text-2xl font-bold text-primary-foreground sm:text-3xl md:text-4xl lg:text-6xl">
           {title}
-          </h1>
-          <p className="max-w-[600px] text-lg text-primary-foreground">
+          </h3>
+          <p className="text-lg text-primary-foreground">
             University College of Engineering, Kariavattom
           </p>
     </div>
    </div>
-    <div className='z-20 p-5 ml-[5%]'>
-      <Markdown remarkPlugins={[remarkGfm]} className={"prose"}>{content}</Markdown>
+    <div className='z-20 p-5 ml-[5%] flex justify-center'>
+      <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]} className={"prose w-full"}>{content}</Markdown>
     </div>
 
     <Footer/>
