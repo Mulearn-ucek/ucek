@@ -2,7 +2,7 @@ import React from "react";
 
 const TopNavbar = () => {
   return (
-    <div className="bg-gray-800 text-white hidden md:flex relative md:flex-row items-center justify-between py-4 px-6 md:px-16 z-30">
+    <div className="bg-gray-800 text-white flex relative md:flex-row items-center justify-between py-4 px-6 md:px-16 z-30">
       <div className="flex flex-col md:flex-row items-start space-y-2 md:space-y-0 md:space-x-4">
         <div className="flex items-center space-x-2">
             <svg
@@ -20,7 +20,7 @@ const TopNavbar = () => {
             </svg>
           <span className="text-sm md:text-[1rem]">+91 471 2308874</span>
         </div>
-        <div className="flex items-center space-x-2">
+        <div className="items-center space-x-2 hidden md:flex">
             <svg
             className="w-5 h-5 items-center flex text-red-500"
               width="16"
@@ -41,11 +41,10 @@ const TopNavbar = () => {
           <span className="text-sm md:text-[1rem]">ucekprincipal@gmail.com</span>
         </div>
       </div>
-      <div className=" md:mr-32 md:flex flex justify-center">
-        Owned By
+      <div className=" md:mr-32 md:flex hidden justify-center">
         <a href="https://keralauniversity.ac.in" target="_blank" className="font-semibold ml-1">University Of Kerala</a>
       </div>
-      <div className="md:flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-5 hidden">
+      <div className="md:flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-5">
         <span className="text-sm md:text-[1rem]">Follow Us</span>
         <div className="flex space-x-2">
           <svg
