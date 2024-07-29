@@ -257,7 +257,7 @@ const Nav = () => {
       <div className="md:h-[50px] bg-white border-t-[1.8px] border-[#2D3E50] w-full flex items-center ">
         <div className="w-full px-5 md:px-4 md:py-0 mt-2 md:mt-0 flex flex-wrap justify-center md:justify-evenly ">
           {menu.map((item, idx) => (
-            <div className="flex items-center">
+            <div key={`p${idx}`} className="flex items-center">
               <a
                 key={item.id}
                 href={item.link}
