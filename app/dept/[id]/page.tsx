@@ -8,8 +8,10 @@ import Footer from '@/components/layout/footer'
 
 import Image from 'next/image'
 import ucekImage from "@/public/img/ucek.jpeg";
+import Markdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 
-const postsDirectory = path.join(process.cwd(), 'contents', 'dept')
+const postsDirectory = path.join(process.cwd(), 'contents', 'departments')
 
 export async function generateStaticParams() {
   const fileNames = fs.readdirSync(postsDirectory)
@@ -33,7 +35,6 @@ export async function generateMetadata({ params } : { params: { id: string } }) 
     description: content[0]
   }
 }
-
 export default async function Post({ params } : { params: { id: string } }) {
 
   const fullPath = path.join(postsDirectory, `${params.id}.md`)
@@ -43,12 +44,10 @@ export default async function Post({ params } : { params: { id: string } }) {
   const title = fileContents.split('\n',1)[0]
   let content = fileContents.split('\n').slice(1).join('\n')
 
-  content = content.replaceAll('* ', '● ')
-
   return (<>
    <Topnav /> 
     <Nav/>
-   <div className='h-[30%]'>
+   <div className='h-[30%] relative text-center'>
     <Image
       src={ucekImage}
       width={1920}
@@ -56,7 +55,7 @@ export default async function Post({ params } : { params: { id: string } }) {
       alt="Slider Image 1"
       className="h-[300px] w-full object-cover brightness-50"
     />
-    <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 px-4 text-center text-white">
+    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">
           <h1 className="text-4xl font-bold text-primary-foreground sm:text-5xl md:text-6xl">
           {title}
           </h1>
@@ -65,8 +64,8 @@ export default async function Post({ params } : { params: { id: string } }) {
           </p>
     </div>
    </div>
-    <div className='p-5 ml-[10%] mt-[3%]'>
-      <div dangerouslySetInnerHTML={{ __html: content }} />
+    <div className='z-20 p-5 ml-[5%]'>
+      <Markdown remarkPlugins={[remarkGfm]} className={"prose"}>{content}</Markdown>
     </div>
 
     <Footer/>
