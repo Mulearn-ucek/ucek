@@ -46,7 +46,7 @@ export default async function Post({ params } : { params: { id: string } }) {
   return (<>
    <Topnav /> 
     <Nav/>
-   <div className='h-[30%] relative text-center'>
+   <div className='h-[30%] relative text-center -z-20'>
     <Image
       src={ucekImage}
       width={1920}
@@ -58,9 +58,9 @@ export default async function Post({ params } : { params: { id: string } }) {
           <h1 className="text-4xl font-bold text-primary-foreground sm:text-5xl md:text-6xl">
           {title}
           </h1>
-          <p className="max-w-[600px] text-lg text-primary-foreground">
+          {/* <p className="max-w-[600px] text-lg text-primary-foreground">
             University College of Engineering, Kariavattom
-          </p>
+          </p> */}
     </div>
    </div>
     <div className='z-20 p-5 ml-[5%]'>
