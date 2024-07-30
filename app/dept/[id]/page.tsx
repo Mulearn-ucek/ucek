@@ -56,16 +56,16 @@ export default async function Post({ params } : { params: { id: string } }) {
       className="h-[300px] w-full object-cover brightness-50"
     />
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">
-          <h1 className="text-4xl font-bold text-primary-foreground sm:text-5xl md:text-6xl">
+          <h1 className="text-3xl font-bold text-primary-foreground sm:text-4xl md:text-5xl">
           {title}
           </h1>
-          <p className="max-w-[600px] text-lg text-primary-foreground">
+          <p className="text-md text-primary-foreground">
             University College of Engineering, Kariavattom
           </p>
     </div>
    </div>
     <div className='z-20 p-5 ml-[5%]'>
-      <Markdown remarkPlugins={[remarkGfm]} className={"prose"}>{content}</Markdown>
+      <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]} className={"prose"}>{content}</Markdown>
     </div>
 
     <Footer/>
