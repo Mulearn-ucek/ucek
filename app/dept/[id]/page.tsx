@@ -47,7 +47,7 @@ export default async function Post({ params } : { params: { id: string } }) {
   return (<>
    <Topnav /> 
     <Nav/>
-   <div className='h-[30%] relative text-center'>
+   <div className='h-[30%] relative text-center -z-20'>
     <Image
       src={ucekImage}
       width={1920}
@@ -56,16 +56,16 @@ export default async function Post({ params } : { params: { id: string } }) {
       className="h-[300px] w-full object-cover brightness-50"
     />
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">
-          <h3 className="text-2xl font-bold text-primary-foreground sm:text-3xl md:text-4xl lg:text-6xl">
+          <h1 className="text-4xl font-bold text-primary-foreground sm:text-5xl md:text-6xl">
           {title}
-          </h3>
-          <p className="text-lg text-primary-foreground">
+          </h1>
+          <p className="max-w-[600px] text-lg text-primary-foreground">
             University College of Engineering, Kariavattom
           </p>
     </div>
    </div>
-    <div className='z-20 p-5 ml-[5%] flex justify-center'>
-      <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]} className={"prose w-full"}>{content}</Markdown>
+    <div className='z-20 p-5 ml-[5%]'>
+      <Markdown remarkPlugins={[remarkGfm]} className={"prose"}>{content}</Markdown>
     </div>
 
     <Footer/>
