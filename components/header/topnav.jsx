@@ -7,13 +7,16 @@ const TopNavbar = () => {
       <div className="flex items-start gap-8">
         <div className="flex items-center gap-2">
           <Phone color="#E74D3C" className="w-4 md:w-6"/>
-          <span className="text-[12px] md:text-[1rem]">+91 471 2308874</span>
+          <a href="tel:+91 471 2308874">
+          <span className="text-[12px] md:text-[1rem]">+91 471 2308874</span></a>
         </div>
         <div className="items-center gap-2 md:flex hidden">
           <Mail color="#E74D3C" />
+          <a href="mailto: ucekprincipal@gmail.com">
           <span className="text-sm md:text-[1rem]">
             ucekprincipal@gmail.com
           </span>
+          </a>
         </div>
       </div>
       <div className=" md:mr-32 justify-center md:flex hidden">
@@ -28,6 +31,7 @@ const TopNavbar = () => {
       <div className="flex items-center md:space-y-0 md:space-x-5 gap-4">
         <span className="text-[12px] md:text-[1rem] hidden md:visible">Follow Us</span>
         <div className="flex space-x-2">
+          <a href="https://www.facebook.com/UCEK.KARYAVATTOM" target="_blank">
           <svg
             className="w-4 h-4 text-red-500"
             viewBox="0 0 20 20"
@@ -46,6 +50,8 @@ const TopNavbar = () => {
               />
             </svg>
           </svg>
+          </a>
+          <a href="https://www.linkedin.com/school/kerala-university-thiruvananthapuram/">
           <svg
             className="w-4 h-4 text-red-500"
             viewBox="0 0 20 20"
@@ -64,6 +70,7 @@ const TopNavbar = () => {
               />
             </svg>
           </svg>
+          </a>
           <svg
             className="w-4 h-4 text-red-500"
             viewBox="0 0 20 20"
