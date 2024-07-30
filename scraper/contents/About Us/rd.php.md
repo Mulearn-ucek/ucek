@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>Research and Development Cell</h2>
 <p>The college has established Research and Development Cell (R&amp;D) which aims to nurture research  culture in our college by promoting research  in newly emerging and challenging frontier areas of Engineering,Technology,Science and Humanities.  It encourages the students and faculty to undertake the research in newly emerging frontier areas including multidisciplinary fields.This enhances the general research capability of budding technocrats by way of participating in conferences, seminars, workshops, project competitions,training programs etc.<br/>
 

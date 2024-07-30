@@ -1,38 +1,43 @@
-<div align="left" class="contentDiv">
 <div class="deptLeftDiv">
 <div class="navaigatorDiv" style="width:">
 <p><a href="/" style="text-decoration:none; color:black; font-size:110%;">Home</a> <img src="images/arrow.png"/> Departments <img src="images/arrow.png"/> Department of Computer Science &amp; Engineering <img src="images/arrow.png"/> News and Events</p>
 </div>
 <h2>News and Events of Department of Computer Science &amp; Engineering</h2>
-<div align="left" class="contentDiv">
 <h2>UNIVERSITY EXAMINATION DETAILS</h2>
-<p>  1.SECOND SEMESTER B.TECH DEGREE EXAMINATION COMMENCED ON 24-05-2022. 
+<p>  1.SECOND SEMESTER B.TECH DEGREE EXAMINATION COMMENCED ON 24-05-2022. 
+
             		</p>
 <h2>CLASS DETAILS </h2>
 <p>1.SIXTH SEMESTER CLASSES COMMENCED ON 18-05-2022</p>
 </div>
 <div class="deptRightDiv"> <!-- for Department Menu -->
-<a href="aboutDept.php?dep=2"><div class="deptRightDivMenuItem">
+<a href="aboutDept.php?dep=2"><div class="deptRightDivMenuItem">
+
 						Home        	        </div>
 </a>
 <a href="faculty.php?did=2">
-<div class="deptRightDivMenuItem">						
+<div class="deptRightDivMenuItem">						
+
 							Faculty	                    </div>
 </a>
 <a href="nonTeachingFaculty.php?did=2">
-<div class="deptRightDivMenuItem">						
+<div class="deptRightDivMenuItem">						
+
 							Non Teaching Faculty	                    </div>
 </a>
 <a href="laboratory.php?did=2">
-<div class="deptRightDivMenuItem">						
+<div class="deptRightDivMenuItem">						
+
 							Laboratory	                    </div>
 </a>
 <a href="deptActivities.php?did=2">
-<div class="deptRightDivMenuItem">						
+<div class="deptRightDivMenuItem">						
+
 							Departmental Activities	                    </div>
 </a>
 <a href="deptNewsEvents.php?did=2">
-<div class="deptRightDivMenuItemSelect">						
+<div class="deptRightDivMenuItemSelect">						
+
 							News and Events	                    </div>
 </a>
 </div>

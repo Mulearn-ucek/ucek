@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>PURCHASE COMMITTEE</h2>
 <p>A Purchase Committee is a group of designated staff established for independent review and evaluation of purchasing documentation whose main role is to recommend the most appropriate supplier or service provider based on price, quality, stock availability, references etc.</p>
 <p>Purchase Committees (PC) is established and managed by the head of the Institute and they have the ultimate responsibility for the successful outcome of the evaluation process. For all PC meetings, the head of the organization should act as person with a non-voting role.</p>

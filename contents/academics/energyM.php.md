@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h1><font color="blue">Energy Management Cell </font></h1>
 <p>Energy is an important entity of the campus. Hence, it is essential that campus adopt an energy policy to promote the proper management and conservation of energy as well as the use of renewable energy. UCEK aims in creation of awareness regarding energy conservation and management.  </p>
 <br/><h4>Details of generator at kariavattom campus</h4>

@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>Vision and Mission</h2>
 <h3>Vision</h3>
 <p>To serve the state and the nation by graduating professionally talented, broadly educated engineers, conducting high quality research, developing innovative technologies thereby disseminating and preserving technical knowledge.</p>

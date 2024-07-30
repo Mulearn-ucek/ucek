@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>IPR Cell </h2>
 <p>The University College of Engineering (UCEK) recognizes the importance of generation of intellectual property by its teachers and students. The college is committed to do all that is within its powers and obligations to encourage the creativity and innovation of its people, which can lead to generation of intellectual property (IP). This cell provides support and guidance to the engineering students and staff in protecting their inventions and creations. The cell is also committed to the common people of our society. It supports common people, who approach the cell, to shape their innovative ideas and guide them to obtain IP right. The activities of this IPR Cell in UCEK  is in alignment with the objectives of the Patent Information Centre, Kerala (PIC – Kerala) of Kerala State Council for Science, Technology and Environment (KSCSTE).</p>
 <br/>

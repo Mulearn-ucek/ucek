@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>COMPUTER SOCIETY OF INDIA (CSI)</h2>
 <p>  Computer Society of India (CSI) is the first and largest body of computer professionals in India. It was started on 6 March 1965 by a few computer professionals and has now grown to be the national body representing computer professionals. </p>
 <h2>Vision</h2>

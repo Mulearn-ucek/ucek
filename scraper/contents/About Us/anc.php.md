@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>Anti-Narco Club</h2>
 <p>The Anti-Narco Club was formed in our college  based on directions from District Police Chief, Thiruvananthapuram (letter No.224/CAMP/CP/17-TC dated 09/02/2018) with Principal as the club chairman and SHO as the convenor. Accordingly, a  meeting was conducted on 14.02.2018 evening 4.30 pm at Police Commissioner Office, Thiruvananthapuram. Further, steps to be taken to prevent  use of drugs were discussed and decision was taken to motivate youngsters  to follow good habits. Thereby, build a drug free campus with the cooperation of Students ,Teachers and PTA of the college.
 <p>The Anti-Narco Club has been constituted to ensure a drug free campus by imposing a total ban on  the possession or consumption of drugs and alcohol by students within or outside the campus.</p>

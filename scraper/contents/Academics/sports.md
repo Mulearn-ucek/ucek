@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>Sports</h2>
 <p>Every year the college conducts various sports tournaments such as Cricket, Football and volleyball to shape up and enhance the sports talent in each student.</p>
 <h2>Cricket Team</h2>

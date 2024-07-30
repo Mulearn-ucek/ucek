@@ -2,7 +2,16 @@
 const nextConfig = {
     reactStrictMode: true,
     images: {
-        domains: ['drive.google.com', 'assets.aceternity.com']
+        remotePatterns: [
+            {
+                "hostname": "drive.google.com",
+                "protocol": "https",
+            },
+            {
+                "hostname": "assets.aceternity.com",
+                "protocol": "https",
+            }
+        ]
     }
 };
 

@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>LITERARY AND DEBATE CLUB -  UCEK </h2>
 <br/><h2>VISION: </h2>
 <p>To shape an accountable creative group, subtle to the cultural, social, fiscal and ecological structure of the modern world. </p>

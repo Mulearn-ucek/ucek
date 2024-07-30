@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>Career Guidance and Placement Unit</h2>
 <h4><font color="#666666">Placement Officer :</font> ANU ANTONY, Assistant Professor in Dept. of Electronics and Communication Engineering, <font color="#666666">Email id :</font> uckplacement@yahoo.com, <font color="#666666">Mob :</font> +91 9447930157</h4>
 <p>The Career Guidance &amp; Placement Unit (CGPU) of the college is working as a team under the leadership of the Coordinator, the Committee Members of each Department and a batch of dedicated students. The students of the college are getting regular placements in many multinational companies like TCS, IBM, INFOSYS, UST GLOBAL, WIPRO, IBS, SPERIDIAN, CTS etc.</p>

@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>FEE STRUCTURE </h2>
 <table border="1">
 <tr><td><h2>FEE DETAILS</h2> </td><td><h2>SEAT</h2></td><td><h2>AMOUNT PER YEAR</h2></td></tr>

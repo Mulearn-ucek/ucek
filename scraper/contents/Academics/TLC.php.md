@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>Teaching and Learning Cell</h2>
 <p>
 The Cell has the main intention of providing a conducive environment for teaching and learning in the institution. It organizes programmes and add-on courses to motivate teachers and students and groom them into professionals of the highest professional and personal quality.  It has been launched with the intent to improve quality in educational development at all stages of education by focussing on the preparation of teachers, their working conditions in classrooms and colleges and to gear their continuous professional development to ensure the best talent made available in the country to shape a future generation. 
