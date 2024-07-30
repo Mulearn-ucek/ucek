@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: { params: { id: string, secti
   }
 }
 
-export const getArticle = cache(({id, section }:{id: string, section: string }) => {
+const getArticle = cache(({id, section }:{id: string, section: string }) => {
   const fullPath = path.join(contentDir, section, `${id}.md`)
   let title, content;
 
@@ -63,7 +63,7 @@ export const getArticle = cache(({id, section }:{id: string, section: string }) 
     content = "Page not found. That's all we know. :-("
   }
   
-  return { title: title, content: content} as { title: string, content: string }
+  return { title, content} as { title: string, content: string }
 })
 
 export default async function Post({ params } : { params: { id: string, section: string } }) {
