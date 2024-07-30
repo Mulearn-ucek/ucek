@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h1><font color="blue">Memorandum of Understanding (MoU) </font></h1>
 <br/><h4>About MoU </h4>
 <p>A Memorandum of Understanding (MoU) is a formal agreement between two or more parties. Companies and organizations can use MoUs to establish official partnerships.  The MoUs have been signed between University College of Engineering Kariavattom(UCEK) and various companies with the sole aim of giving training and placement to the students. </p>

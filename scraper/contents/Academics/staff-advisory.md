@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>STAFF ADVISORY SYSTEM</h2>
 <p>Immediately on admission to the college, each student will be assigned to a faculty member called the Staff Advisor for that batch, who will open a student file for personal and academic details. The student and his parent can have frequent interaction with the Staff Advisor. After the release of result of each examination,, the details will be recorded in the student file. The Staff Advisor will record any outstanding performance, or disciplinary action, misbehaviour etc. in the student file.</p>
 <h3>ATTENDANCE AND LEAVE REGULATIONS</h3>

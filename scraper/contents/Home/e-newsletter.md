@@ -1,3 +1,2 @@
-<div align="left" class="contentDiv">
 <h2><img height="25" src="images/e-news.png" style="border:0px; box-shadow:none;" width="25"/> Online Class</h2>
 <table border="0" cellpadding="8" style="border-collapse:collapse;" width="98%"><tr><td align="right" height="15" style="font-size:85%;padding-top:5px;padding-bottom:8px;" valign="top" width="15"> <img height="12" src="images/e-news.png" style="border:0px; box-shadow:none;" width="12"/> </td><td style="font-size:16px; padding-top:5px;padding-bottom:8px;" valign="top">Online Classes EC/CS/IT <a class="cc" href="/eNewsLetters/COMBINED_EXCEL1588851343.pdf" target="_blank">Click Here</a><font color="#CCC" size="2"> Posted on : 07-05-2020</font></td></tr></table> </div>

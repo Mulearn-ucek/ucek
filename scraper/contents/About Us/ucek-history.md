@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>HISTORY</h2>
 <h3>Our University</h3>
 <p>The University of Travancore, which later became the University of Kerala, was established in 1937 by a promulgation of the Maharaja of Travancore, Sri Chithira Thirunal Balarama Varma who was also the first Chancellor of the University. Sir. C P Ramaswamy Ayyar, the then Diwan of the state, was the first Vice-Chancellor. It was the sixteenth University to be set up in India and ten colleges within the state of Travancore which were affiliated to the Madras University became the affiliated colleges of the University of Travancore.</p>

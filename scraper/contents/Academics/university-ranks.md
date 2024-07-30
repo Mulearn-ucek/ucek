@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>University Rank Details</h2>
 <table cellpadding="8">
 <tr><td></td><td>DETAILS</td><td>YEAR</td></tr>

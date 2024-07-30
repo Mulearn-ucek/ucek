@@ -2,6 +2,7 @@
 
 import React from "react";
 import logo from "@/public/img/logo.png";
+import Image from "next/image";
 const Footer = () => {
   return (
     <>
@@ -9,7 +10,7 @@ const Footer = () => {
         
         <div className="container justify-between mx-auto py-8 px-6 flex flex-col md:flex-row justify- items-center">
           <div className="flex items-center justify-between gap-3  md:items-start space-y-1  md:space-y-0 md:space-x-6">
-            <img
+            <Image
               src={logo.src}
               alt="University of Kerala Logo"
               className="h-12"

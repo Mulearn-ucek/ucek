@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>Principal</h2>
 <div style="width:160px; float:left; margin-right:20px;margin-bottom:6px;">
 <img src="images/depts/principal.jpg"/>

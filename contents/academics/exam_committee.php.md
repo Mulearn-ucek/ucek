@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>EXAMINATION COMMITTEE </h2>
 <p>The examination committee of University College Of Engineering, Kariavattom carry out various examinations including university examinations and internal examinations for students and also conduct the allotted examinations of Kerala PSC.  </p>
 <br/><h2>GENERAL INFORMATION </h2>

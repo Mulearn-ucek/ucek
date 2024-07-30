@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2> ARTS CLUB </h2>
 <p>UCEK arts club is one of the biggest cultural extravaganza club of University college of Engineering, one which encompasses music, dance and fine arts &amp; craft, encasing them in a dynamic dosage of fun and entertainment. Three clubs comes under the Arts club </p>
 <br/>

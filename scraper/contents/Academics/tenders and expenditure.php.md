@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>Tenders And Expenditure </h2>
 <h2>Running Proposal of last academic year </h2>
 <p>Laptop for Students Developer Club and various other departments</p>

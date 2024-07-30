@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>SC/ST Committee</h2>
 <p>A The Scheduled Caste (SC) and Scheduled Tribes (ST) Cell in an institute promotes the special interests of students in the reserved category. It is expected to provide special inputs in areas where the students experience difficulties.The students belongs SC/ST category are identified and are given all scholarship provided by the central and state government </p>
 <p>UCEK constituted SC/ST Committee to help the SC/ST categories integrate with other communities of the institute and to remove difficulties, which they may be experiencing.</p>

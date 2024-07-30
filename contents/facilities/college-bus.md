@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>College Bus</h2>
 <p>Our Transport division in the college provides transport facility to students and staff. The College has got two buses operating in two different routes to cater to the needs of students coming from different parts of Thiruvananthapuram city. The two routes together cover almost all important points within the city. Students can avail College bus facility by taking passes for one month. Occasional users can travel in the buses by taking tickets costing Rs.15/- per journey. The two different routes of operation are</p> <div style="width:620px; float:right; margin-left:20px;"><img alt="College Bus UCEK" src="images/college-bus.jpg" style="border-radius:2%; "/></div>
 <p><strong>Route A :-</strong> Eastfort—Attakulangara - Killipalam - Karamana - Poojapura - Jagathy - Vazhuthacaud - Panavila - Thampanoor - S.H.C - P.M.S - Pattom - Kesavadasapuram - Ulloor - Karaivattom - UCEK.  </p>

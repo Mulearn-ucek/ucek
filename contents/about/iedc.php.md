@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>INNOVATION AND ENTREPRENEURSHIP DEVELOPMENT CENTRE(IEDC) </h2>
 <p>The Innovation and Entrepreneurship Development Centre, nurtured by KSUM is setup within
 the campus serving as a catalyst for entrepreneurship at the institute by supporting and

@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>SCHOLARSHIP DETAILS</h2>
 <p>The students belonging to SC/ST/OEC and SEBC category are eligible for fee concession/stipend/lump sum grant etc. as per the norms stipulated by the Govt. of Kerala. </p>
 <table border="1">

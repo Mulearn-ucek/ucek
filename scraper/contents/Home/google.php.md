@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>GOOGLE CLASSROOM DETAILS </h2>
 <table bgcolor="lightblue" height="150" width="400">
 <tr>

@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>FOSS Cell </h2>
 <p>To promote the use of FOSS (Free and Open Source Software) technologies and applications among students and faculties and to encore them in contributing towards the community development in FOSS, ICFOSS (International Centre for Free and Open Source Software) has initiated setting up of FOSS Cells in educational institutions, in the year 2015. The Cell’s activities are bound in participation with the members of the institutions and ICFOSS. These deeds of the Cell aim in promoting FOSS activities through a group of interested students and teachers of the institution, on a voluntary basis.</p>
 <br/>

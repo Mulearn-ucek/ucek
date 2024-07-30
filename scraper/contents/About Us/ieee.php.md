@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h1><font color="blue">IEEE</font></h1>
 <br/><h4>Why an IEEE Student branch?</h4>
 <p>IEEE members can access information on local events and activities by signing into IEEE Collabratec, an integrated multi-functional platform and global network of technology-focused professionals, leveraging IEEE's extensive knowledge base and community of thought-leaders. 

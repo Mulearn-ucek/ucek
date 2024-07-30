@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>Green Protocol  Cell</h2>
 <p>  
 Green protocol cell

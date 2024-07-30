@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h1><font color="blue">CENTRAL LIBRARY </font></h1>
 <p>The college library boasts of a copious assemblage of technical books and subscribes to a wide
 range of leading journals and magazines. Our students are getting the added benefit of

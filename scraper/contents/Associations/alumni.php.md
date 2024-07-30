@@ -1,9 +1,11 @@
-<div align="left" class="contentDiv">
 <h2>Welcome to UCKAA (University College of Engineering Alumni Association)</h2>
 <p>The University College of Engineering Kariavattom Alumini Association[UCKAA] was launched in 2005.The UCKAA main objective is to develop unity among teaching staff,non-teaching staff,former/retired faculties and former students of UCKAA.The association aims to utilize the rich experiences and valuable advices of former students of the college for the  progress of the present students .The Alumini also provide financial assistance for the betterment of college,motivational talks to the present students to upgrade their technical as well as general skills and share employment opportunities for the final year students and alumni of the college.Now around 2000 of former students are the life members of Alumni Association<br/>
-<p><strong>ACTIVITIES</strong><br/>
-
-UCKAA has been contributed immensely towards the overall development of the college. Every year, the College Toppers are felicitated with certificate and medal .
+<p><strong>ACTIVITIES</strong><br/>
+
+
+
+UCKAA has been contributed immensely towards the overall development of the college. Every year, the College Toppers are felicitated with certificate and medal .
+
 The association extends support and financial aid to placement activities and personality development programmes for students and teachers. The association provides the alumini members for the opportunity to visit the college and interact with the staff and students. UCKAA had also set up a fund for the infrastructure development of software labs and other student activities such MERAKI competition etc .<br/>
 <div class="contentDiv">
 <h1><b></b>Contribution from 2000 Batch towards the renovation of Computer Labs</h1><br/><br/>

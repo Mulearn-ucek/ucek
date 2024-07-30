@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <h2>ETHICS COMMITTEE</h2>
 <p>  
 ETHICS COMMITTEE

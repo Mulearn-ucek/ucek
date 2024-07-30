@@ -1,4 +1,3 @@
-<div align="left" class="contentDiv">
 <div align="left" class="deptLeftDiv">
 <div class="navaigatorDiv" style="width:">
 <p><a href="/" style="text-decoration:none; color:black; font-size:110%;">Home</a> <img src="images/arrow.png"/> Departments <img src="images/arrow.png"/> Department of Computer Science &amp; Engineering  <img src="images/arrow.png"/> Faculty</p>
@@ -10,8 +9,10 @@
 <table cellpadding="5">
 <tr><td><img height="133" src="images/depts/1467470034divyadt.jpg" style="min-width:100px; min-height:133" width="100"/></td>
 <td style="line-height:20px;"><b> Smt. Divya D. T. </b>
-<br/> Head of the Department<br/>Qualification : ME                                        
-                                        
+<br/> Head of the Department<br/>Qualification : ME                                        
+
+                                        
+
                                         </td>
 </tr>
 </table>
@@ -21,8 +22,10 @@
 <table cellpadding="5">
 <tr><td><img height="133" src="images/depts/1467470180minujmohan.jpg" style="min-width:100px; min-height:133" width="100"/></td>
 <td style="line-height:20px;"><b> Smt. Minu J. Mohan</b>
-<br/> Assistant Professor <br/>Qualification : ME                                        
-                                        
+<br/> Assistant Professor <br/>Qualification : ME                                        
+
+                                        
+
                                         </td>
 </tr>
 </table>
@@ -33,8 +36,10 @@
 <table cellpadding="5">
 <tr><td><img height="133" src="images/depts/1467470581suma_c_s.jpg" style="min-width:100px; min-height:133" width="100"/></td>
 <td style="line-height:20px;"><b> Smt. Suma C. S.</b>
-<br/> Assistant Professor <br/>Qualification : ME                                        
-                                        
+<br/> Assistant Professor <br/>Qualification : ME                                        
+
+                                        
+
                                         </td>
 </tr>
 </table>
@@ -44,8 +49,10 @@
 <table cellpadding="5">
 <tr><td><img height="133" src="images/depts/1588848926shij.jpg" style="min-width:100px; min-height:133" width="100"/></td>
 <td style="line-height:20px;"><b> Smt.Shijida Shain</b>
-<br/> Assistant Professor <br/>Qualification : MBA,ME                                        
-                                        
+<br/> Assistant Professor <br/>Qualification : MBA,ME                                        
+
+                                        
+
                                         </td>
 </tr>
 </table>
@@ -56,8 +63,10 @@
 <table cellpadding="5">
 <tr><td><img height="133" src="images/depts/1467470620syam_sasankan.jpg" style="min-width:100px; min-height:133" width="100"/></td>
 <td style="line-height:20px;"><b> Sri. Syam Sasankan   </b>
-<br/> Assistant Professor <br/>Qualification : ME                                        
-                                        
+<br/> Assistant Professor <br/>Qualification : ME                                        
+
+                                        
+
                                         </td>
 </tr>
 </table>
@@ -67,8 +76,10 @@
 <table cellpadding="5">
 <tr><td><img height="133" src="images/depts/1467470850rekhamole_g.jpg" style="min-width:100px; min-height:133" width="100"/></td>
 <td style="line-height:20px;"><b> Rekhamole G.     </b>
-<br/> Assistant Professor <br/>Qualification : ME                                        
-                                        
+<br/> Assistant Professor <br/>Qualification : ME                                        
+
+                                        
+
                                         </td>
 </tr>
 </table>
@@ -79,8 +90,10 @@
 <table cellpadding="5">
 <tr><td><img height="133" src="images/depts/1467470717drishyass.jpg" style="min-width:100px; min-height:133" width="100"/></td>
 <td style="line-height:20px;"><b> Drishya S. S.</b>
-<br/> Assistant Professor <br/>Qualification : ME                                        
-                                        
+<br/> Assistant Professor <br/>Qualification : ME                                        
+
+                                        
+
                                         </td>
 </tr>
 </table>
@@ -90,8 +103,10 @@
 <table cellpadding="5">
 <tr><td><img height="133" src="images/depts/1467471035sumisha_m_s.jpg" style="min-width:100px; min-height:133" width="100"/></td>
 <td style="line-height:20px;"><b> Sumisha M. S.</b>
-<br/> Assistant Professor <br/>Qualification : ME                                        
-                                        
+<br/> Assistant Professor <br/>Qualification : ME                                        
+
+                                        
+
                                         </td>
 </tr>
 </table>
@@ -102,8 +117,10 @@
 <table cellpadding="5">
 <tr><td><img height="133" src="images/depts/1588835584raji.jpg" style="min-width:100px; min-height:133" width="100"/></td>
 <td style="line-height:20px;"><b> Rajimol V</b>
-<br/> Assistant Professor <br/>Qualification : M.E                                        
-                                        
+<br/> Assistant Professor <br/>Qualification : M.E                                        
+
+                                        
+
                                         </td>
 </tr>
 </table>
@@ -113,8 +130,10 @@
 <table cellpadding="5">
 <tr><td><img height="133" src="images/depts/1467470944manuvkumar.jpg" style="min-width:100px; min-height:133" width="100"/></td>
 <td style="line-height:20px;"><b> Manu V. Kumar</b>
-<br/> Assistant Professor <br/>Qualification : ME                                        
-                                        
+<br/> Assistant Professor <br/>Qualification : ME                                        
+
+                                        
+
                                         </td>
 </tr>
 </table>
@@ -125,8 +144,10 @@
 <table cellpadding="5">
 <tr><td><img height="133" src="images/depts/1588774574nimmyphoto_(2).jpg" style="min-width:100px; min-height:133" width="100"/></td>
 <td style="line-height:20px;"><b> Nimmy Thomas  </b>
-<br/> Assistant Professor <br/>Qualification : ME                                        
-                                        
+<br/> Assistant Professor <br/>Qualification : ME                                        
+
+                                        
+
                                         </td>
 </tr>
 </table>
@@ -136,8 +157,10 @@
 <table cellpadding="5">
 <tr><td><img height="133" src="images/depts/1595945261nimmikokila.jpg" style="min-width:100px; min-height:133" width="100"/></td>
 <td style="line-height:20px;"><b> Nimmi Kokila M V</b>
-<br/> Assistant Professor <br/>Qualification : ME                                        
-                                        
+<br/> Assistant Professor <br/>Qualification : ME                                        
+
+                                        
+
                                         </td>
 </tr>
 </table>
@@ -148,8 +171,10 @@
 <table cellpadding="5">
 <tr><td><img height="133" src="images/depts/dummy_L.jpg" style="min-width:100px; min-height:133" width="100"/></td>
 <td style="line-height:20px;"><b> Gargy G.</b>
-<br/> Assistant Professor <br/>Qualification : ME                                        
-                                        
+<br/> Assistant Professor <br/>Qualification : ME                                        
+
+                                        
+
                                         </td>
 </tr>
 </table>
@@ -159,7 +184,8 @@
 </table>
 </div>
 <div class="deptRightDiv"> <!-- for Department Menu -->
-<a href="aboutDept.php?dep=2"><div class="deptRightDivMenuItem">
+<a href="aboutDept.php?dep=2"><div class="deptRightDivMenuItem">
+
 						Home        	        </div>
 </a>
 <a href="faculty.php?did=2">

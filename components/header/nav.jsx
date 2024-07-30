@@ -12,6 +12,7 @@ import {
   Utensils,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const Nav = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -95,7 +96,7 @@ const Nav = () => {
     <header className="bg-white border-b z-30 h-[205px] flex items-center flex-col">
       <div className="w-full py-4 px-2 md:px-16 md:h-[155px] flex flex-col md:flex-row items-center justify-between">
         <div className="flex items-center space-x-4">
-          <img
+          <Image
             src={Logo.src}
             alt="University of Kerala Logo"
             className="h-[50px] w-[50px] md:h-[85px] md:w-[85px]"
@@ -233,28 +234,28 @@ const Nav = () => {
               }`}
             >
               <a
-                href="/dept/cse"
+                href="/departments/cse"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
                 <CodeXml className="md:w-6 w-5" />
                 Computer Science &amp; Engineering
               </a>
               <a
-                href="/dept/ece"
+                href="/departments/ece"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
                 <Cpu className="md:w-6 w-5" />
                 Electronics &amp; Communication Engineering
               </a>
               <a
-                href="/dept/it"
+                href="/departments/it"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
                 <Network className="md:w-6 w-5" />
                 Information Technology
               </a>
               <a
-                href="/dept/gen"
+                href="/departments/gen"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
                 <BookOpenCheck className="md:w-6 w-5" />
