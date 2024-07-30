@@ -11,21 +11,19 @@ import ucekImage from "@/public/img/ucek.jpeg";
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
-import { cache } from 'react'
 
 const contentDir = path.join(process.cwd(), 'contents')
 
 export async function generateStaticParams() {
   const sections = fs.readdirSync(contentDir)
 
-  const paths = sections.map((section) => {
+  const paths = sections.flatMap((section) => {
     const articles = fs.readdirSync(path.join(contentDir, section))
       return articles.map((article) => {
         return {
-          params: {
             id: article.replace(/\.md$/, ''),
             section: section,
-          }}
+          }
       })
     })
   return paths
@@ -50,7 +48,7 @@ export async function generateMetadata({ params }: { params: { id: string, secti
   }
 }
 
-const getArticle = cache(({id, section }:{id: string, section: string }) => {
+const getArticle = (({id, section }:{id: string, section: string }) => {
   const fullPath = path.join(contentDir, section, `${id}.md`)
   let title, content;
 
