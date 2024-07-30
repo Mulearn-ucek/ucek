@@ -10,7 +10,7 @@ import ucekImage from "@/public/img/ucek.jpeg";
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 
-const postsDirectory = path.resolve('contents', "home")
+const postsDirectory = path.join(process.cwd(), 'contents', 'departments')
 
 export async function generateStaticParams() {
   const fileNames = fs.readdirSync(postsDirectory)
