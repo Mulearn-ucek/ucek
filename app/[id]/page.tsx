@@ -64,7 +64,7 @@ export default async function Post({ params } : { params: { id: string } }) {
     </div>
    </div>
     <div className='z-20 p-5 ml-[5%]'>
-      <Markdown remarkPlugins={[remarkGfm]} className={"prose"}>{content}</Markdown>
+      <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]} className={"prose"}>{content}</Markdown>
     </div>
 
     <Footer/>
