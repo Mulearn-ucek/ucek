@@ -67,7 +67,6 @@ const Nav = () => {
     },
   ];
 
-
   const setButtonRef = (index) => (element) => {
     dropDownButtons.current[index] = element;
   };
@@ -79,7 +78,7 @@ const Nav = () => {
     if (
       dropdownRef.current &&
       !dropdownRef.current.contains(event.target) &&
-      !dropDownButtons.current.some(button => button.contains(event.target))
+      !dropDownButtons.current.some((button) => button.contains(event.target))
     ) {
       setOpenDropdown(null);
     }
@@ -95,8 +94,11 @@ const Nav = () => {
   return (
     <header className="bg-white border-b z-30 h-[205px] flex items-center flex-col">
       <div className="w-full py-4 px-2 md:px-16 md:h-[155px] flex flex-col md:flex-row items-center justify-between">
+        <a href="/">
         <div className="flex items-center space-x-4">
           <Image
+            width={85}
+            height={85}
             src={Logo.src}
             alt="University of Kerala Logo"
             className="h-[50px] w-[50px] md:h-[85px] md:w-[85px]"
@@ -110,6 +112,7 @@ const Nav = () => {
             </p>
           </div>
         </div>
+        </a>
         <nav className="flex-wrap justify-evenly gap-3 flex md:space-x-10 mt-4 md:mt-0 text-[14px] md:text-[16px] font-[500]">
           {pathname != "/" && (
             <a href="/" className="text-gray-600 hover:text-gray-800">
@@ -163,7 +166,7 @@ const Nav = () => {
 
           <div className="relative">
             <button
-            ref={setButtonRef(2)}
+              ref={setButtonRef(2)}
               onClick={() => handleDropdownToggle("facilities")}
               className="text-gray-600 hover:text-gray-800 flex items-center"
             >
@@ -207,7 +210,7 @@ const Nav = () => {
           </div>
           <div className="relative">
             <button
-            ref={setButtonRef(3)}
+              ref={setButtonRef(3)}
               onClick={() => handleDropdownToggle("departments")}
               className="text-gray-600 hover:text-gray-800 flex items-center "
             >
