@@ -25,7 +25,6 @@ export function HeroSlider() {
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
 
-  console.log(current, count);
   useEffect(() => {
     if (!api) {
       return;
@@ -65,7 +64,6 @@ export function HeroSlider() {
             <span className={`w-3 h-3 block rounded-full ${current == 2 ? 'bg-white' :'bg-[#ffffff48]'}`}></span>
             <span className={`w-3 h-3 block rounded-full ${current == 3 ? 'bg-white' :'bg-[#ffffff48]'}`}></span>
             <span className={`w-3 h-3 block rounded-full ${current == 4 ? 'bg-white' :'bg-[#ffffff48]'}`}></span>
-            
             </div>
         <CarouselContent>
           
