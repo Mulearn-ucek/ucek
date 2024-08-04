@@ -23,11 +23,14 @@ To express interest in future vacancies for B.Tech admission under the NRI quota
 ## Closing Ranks
 Based on KEAM 2023 - Allotment Phase 3.
 
+<div class="md-table-wraper" markdown="block">
+
 | | SM | MG | EW | EZ | MU | BH | LA | DV | VK | BX | KU | KN | SC | ST | 
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 Computer Science & Engineering | 23713 | 42477 | 40296 | 34066 | 30464 | 27872 | 36813 | - | 35283 | 28512 | - | 45032 | 47959 | 45421
 |Electronics & Communication Engineering | 48812 | 42345 | 42304 | 38304 | 41952 | 38131 | 39601 | - | 40310 | 28084 | - | - | 47703 | - | - |
 | Information Technology | 49152 | 49152 | 47280 | 43197 | 42305 | 47175| 47175 | - | 44728 | - | - | - | 49072 | - |
+</div>
 
 SM - State Merit, MG - Management 
 

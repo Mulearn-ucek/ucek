@@ -32,3 +32,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.md-table-wraper {
+  overflow-x: auto;
+}
