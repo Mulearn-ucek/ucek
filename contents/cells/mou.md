@@ -1,7 +1,5 @@
 Memorandum of Understanding (MoU) Cell
 
-#### About MoU
-
 A Memorandum of Understanding (MoU) is a formal agreement between two or more parties. Companies and organizations can use MoUs to establish official partnerships. The MoUs have been signed between University College of Engineering Kariavattom(UCEK) and various companies with the sole aim of giving training and placement to the students.
 
 #### Purpose of MoU

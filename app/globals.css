@@ -32,3 +32,8 @@ body {
     text-wrap: balance;
   }
 }
+
+.md-table-wraper {
+  overflow-x: auto;
+  max-width: 90dvw;
+}
