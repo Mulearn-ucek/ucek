@@ -150,7 +150,6 @@ export function ExpandableCardDemo({ cards }: any) {
                 </motion.p>
               </div>
             </div>
-            <Pointer size={18} className="block"/>
           </motion.div>
         ))}
       </ul>

@@ -7,10 +7,12 @@ The CGPU sends the College brochure to the selected companies inviting them for 
 The Unit helps students in arranging vacation training and project work in Industries. This acts as an Industry-Institute linkage for conducting personality development and technical seminars for students. The Unit also provides soft skill training prior to the campus recruitment process. This initiates steps for getting placement in industries.
 
 ## Placement Officer : 
-        ANU ANTONY, 
-        Assistant Professor in Dept. of Electronics and Communication Engineering, 
-        Email id : uckplacement@yahoo.com, 
-        Mob : +91 9447930157
+
+ANU ANTONY, 
+<br>Assistant Professor in Dept. of Electronics and Communication Engineering
+<br>Email id : uckplacement@yahoo.com, 
+Mob : +91 9447930157
+
   
 
 ## Details of some of the placed students

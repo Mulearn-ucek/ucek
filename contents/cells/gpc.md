@@ -1,4 +1,4 @@
-## Green Protocol Cell
+Green Protocol Cell
 
 Green protocol cell “Green Protocol is based on three principles—reduce, reuse and recycle. Green protocol is essentially a set of measures which when implemented results in significant reduction of waste with primary focus on prevention of use of disposables and using reusable alternatives like glass/stainless/porcelain cutleries.
 

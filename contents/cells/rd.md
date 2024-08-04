@@ -1,4 +1,4 @@
-## Research and Development Cell
+Research and Development Cell
 
 The college has established Research and Development Cell (R&D) which aims to nurture research culture in our college by promoting research in newly emerging and challenging frontier areas of Engineering,Technology,Science and Humanities. It encourages the students and faculty to undertake the research in newly emerging frontier areas including multidisciplinary fields.This enhances the general research capability of budding technocrats by way of participating in conferences, seminars, workshops, project competitions,training programs etc.  
 Research and Development (R&D) flourishes where young minds and experienced faculty work synergistically.  
@@ -8,20 +8,20 @@ The college has a Research and Development Cell which is constituted by a 4 memb
 
 Research and Development Cell comprising of the following members
 
-| #### Member | #### Department |
+| Member | Department |
 | --- | --- |
-
+| TBA | TBA |
 
 ## Objectives of R & D Cell
 
-> To develop new tools and techniques to expedite problem solving with special emphasis on rural and socially relevant issues.  
-> To design novel methodologies in all the fields of Engineering and Technology.  
-> To acquire new scientific knowledge.  
-> Innovation-friendly society aimed at long-term development  
-> To have Periodical interactive session with entrepreneurs/industrialists  
-> To enhance skill development training and self employment opportunities  
-> Effective management in ph.D program.  
-> To organize various workshops/training/seminar related to the promotion of research.  
+* To develop new tools and techniques to expedite problem solving with special emphasis on rural and socially relevant issues.  
+* To design novel methodologies in all the fields of Engineering and Technology.  
+* To acquire new scientific knowledge.  
+* Innovation-friendly society aimed at long-term development  
+* To have Periodical interactive session with entrepreneurs/industrialists  
+* To enhance skill development training and self employment opportunities  
+* Effective management in ph.D program.  
+* To organize various workshops/training/seminar related to the promotion of research.  
 
 ## Functionalities of Research & Development Cell
 
@@ -53,8 +53,8 @@ It is constituted to strengthen research activities among students & staff, enha
 
 ## Major goals
 
-> Establish and Nurture Research culture among students & staffs.  
-> Encourage Sponsored Research programmes & Enhance facilities.  
-> Provide Ambience for progressive Research.  
-> Engage in Collaborative Research.  
-> Pursue focused research towards International Expertise.  
+* Establish and Nurture Research culture among students & staffs.  
+* Encourage Sponsored Research programmes & Enhance facilities.  
+* Provide Ambience for progressive Research.  
+* Engage in Collaborative Research.  
+* Pursue focused research towards International Expertise.  
