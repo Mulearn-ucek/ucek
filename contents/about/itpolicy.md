@@ -1,4 +1,4 @@
-Internet And Campus Network Acceptable Use Policy
+Internet And Campus Network Usage Policy
 
 University College of Engineering provides campus Wi-Fi and computing facilities for the use of faculty, staff, students and other authorized individuals in the campus.
 

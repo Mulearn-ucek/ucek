@@ -6,6 +6,7 @@ import {
   BusFront,
   CodeXml,
   Cpu,
+  MoreHorizontal,
   Network,
   NotebookPen,
   SwatchBook,
@@ -13,6 +14,7 @@ import {
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 
 const Nav = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -75,7 +77,7 @@ const Nav = () => {
       !dropdownRef.current.contains(event.target) &&
       !dropDownButtons.current.some((button) => button.contains(event.target))
     ) {
-      setOpenDropdown(null);
+      // setOpenDropdown(null);
     }
   };
 
@@ -89,7 +91,7 @@ const Nav = () => {
   return (
     <header className="bg-white border-b z-30 h-[205px] flex items-center flex-col">
       <div className="w-full py-4 px-2 md:px-16 md:h-[155px] flex flex-col md:flex-row items-center justify-between">
-        <a href="/">
+        <Link href="/">
         <div className="flex items-center space-x-4">
           <Image
             width={85}
@@ -107,12 +109,12 @@ const Nav = () => {
             </p>
           </div>
         </div>
-        </a>
+        </Link>
         <nav className="flex-wrap justify-evenly gap-3 flex md:space-x-10 mt-4 md:mt-0 text-[14px] md:text-[16px] font-[500]">
           {pathname != "/" && (
-            <a href="/" className="text-gray-600 hover:text-gray-800">
+            <Link href="/" className="text-gray-600 hover:text-gray-800">
               Home
-            </a>
+            </Link>
           )}
           <div className="relative">
             <button
@@ -142,61 +144,44 @@ const Nav = () => {
                 openDropdown === "academics" ? "block" : "hidden"
               }`}
             >
-              <a
+              <Link
                 href="/cells/union"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
                 College Union
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/cells/pta"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
                 PTA
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/cells/anti-ragging"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
                 Anti Ragging
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/cells/womencell"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
                 Women Cell
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/cells/placement"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
                 Placement Cell
-              </a>
-              <a
-                href="/cells/iqac"
+              </Link>
+              <Link
+                href="/cells"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
-                IQAC
-              </a>
-              <a
-                href="/cells/scst"
-                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
-              >
-                SCST Cell
-              </a>
-              <a
-                href="/cells/sports"
-                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
-              >
-                Sports Committee
-              </a>
-              <a
-                href="/cells/anc"
-                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
-              >
-                Anti Narco Club
-              </a>
-              
+                <MoreHorizontal/>View All
+              </Link>
+
+
             </div>
           </div>
 
@@ -228,43 +213,43 @@ const Nav = () => {
                 openDropdown === "facilities" ? "block" : "hidden"
               }`}
             >
-              <a
+              <Link
                 href="#"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
                 Mulearn UCEK
-              </a>
+              </Link>
               
-              <a
+              <Link
                 href="#"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
                 Google DSC
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
                 IEEE SB UCEK
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
                 Legacy IEDC
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
                 NSS
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
                 FOSS Club
-              </a>
+              </Link>
               
             </div>
           </div>
@@ -296,52 +281,52 @@ const Nav = () => {
                 openDropdown === "departments" ? "block" : "hidden"
               }`}
             >
-              <a
+              <Link
                 href="/departments/cse"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
                 <CodeXml className="md:w-6 w-5" />
                 Computer Science &amp; Engineering
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/departments/ece"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
                 <Cpu className="md:w-6 w-5" />
                 Electronics &amp; Communication Engineering
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/departments/it"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
                 <Network className="md:w-6 w-5" />
                 Information Technology
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/departments/gen"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
                 <BookOpenCheck className="md:w-6 w-5" />
                 General Departments
-              </a>
+              </Link>
             </div>
           </div>
-          <a href="#" className="text-gray-600 hover:text-gray-800">
+          <Link href="#" className="text-gray-600 hover:text-gray-800">
             About Us
-          </a>
+          </Link>
         </nav>
       </div>
       <div className="md:h-[50px] bg-white border-t-[1.8px] border-[#2D3E50] w-full flex items-center ">
         <div className="w-full px-5 md:px-4 md:py-0 mt-2 md:mt-0 flex flex-wrap justify-center md:justify-evenly ">
           {menu.map((item, idx) => (
             <div key={`p${idx}`} className="flex items-center">
-              <a
+              <Link
                 key={item.id}
                 href={item.link}
                 className="text-[#2D3E50] text-[12px] md:text-[14px] hover:text-gray-800 font-[600] border-gray-300 md:border-none md:last:border-none"
               >
                 {item.title}
-              </a>
+              </Link>
               {idx < menu.length - 1 && (
                 <span className="mx-2 visible md:hidden text-gray-300">•</span>
               )}

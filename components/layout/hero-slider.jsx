@@ -45,7 +45,7 @@ export function HeroSlider() {
   }, []);
 
   return (
-    <section className="w-full mt-[6rem] sm:mt-3 md:mt-0">
+    <section className="w-full mt-10 md:mt-0 ">
       <Carousel
         setApi={setApi}
         opts={{

@@ -42,7 +42,7 @@ SM - State Merit, MG - Management
 
 #### Detailed Structure
 
-|  **Sl.No.** |  **DETAILS OF FEE** |  **FEE (MERIT)** |  **FEE (MANAGEMENT)** |  **METHOD OF REMITTANCE** |
+|  **#** |  **DETAILS OF FEE** |  **FEE (MERIT)** |  **FEE (MANAGEMENT)** |  **METHOD OF REMITTANCE** |
 | --- | --- | --- | --- | --- |
 |  1 |  TUITION FEE |  26,750(For Semester 1 and Semester 2) |  58,250(For Semester 1 and Semester 2) |  Demand Draft In Favour Of Finance Officer, University Of Kerala |
 |  2 |  ADMISSION FEE |  160 |  160 |  By Cash At College |

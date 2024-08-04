@@ -1,6 +1,6 @@
-<h2>Principal</h2>
+Our Principal
 <div style="width:160px; float:left; margin-right:20px;margin-bottom:6px;">
-<img src="images/depts/principal.jpg"/>
+<img src="/img/administrative/principal.png"/>
 </div>
 
 <h3>Dr.BISHARATHU BEEVI. A</h3>
