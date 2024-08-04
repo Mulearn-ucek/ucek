@@ -28,7 +28,7 @@ const Nav = () => {
     {
       id: 2,
       title: "Admissions",
-      link: "",
+      link: "/admissions/btech",
     },
     {
       id: 3,
@@ -59,12 +59,7 @@ const Nav = () => {
       id: 8,
       title: "Image Gallery",
       link: "",
-    },
-    {
-      id: 9,
-      title: "Histroy",
-      link: "",
-    },
+    }
   ];
 
   const setButtonRef = (index) => (element) => {
@@ -125,7 +120,7 @@ const Nav = () => {
               onClick={() => handleDropdownToggle("academics")}
               className="text-gray-600 hover:text-gray-800 flex items-center"
             >
-              Academics
+              Cells & Committes
               <svg
                 className="w-3 h-3 ml-1"
                 fill="none"
@@ -148,19 +143,60 @@ const Nav = () => {
               }`}
             >
               <a
-                href="#"
+                href="/cells/union"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
-                <SwatchBook className="md:w-6 w-5" />
-                Syllabus
+                College Union
               </a>
               <a
-                href="#"
+                href="/cells/pta"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
-                <NotebookPen className="md:w-6 w-5" />
-                Notes
+                PTA
               </a>
+              <a
+                href="/cells/anti-ragging"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                Anti Ragging
+              </a>
+              <a
+                href="/cells/womencell"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                Women Cell
+              </a>
+              <a
+                href="/cells/placement"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                Placement Cell
+              </a>
+              <a
+                href="/cells/iqac"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                IQAC
+              </a>
+              <a
+                href="/cells/scst"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                SCST Cell
+              </a>
+              <a
+                href="/cells/sports"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                Sports Committee
+              </a>
+              <a
+                href="/cells/anc"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                Anti Narco Club
+              </a>
+              
             </div>
           </div>
 
@@ -170,7 +206,7 @@ const Nav = () => {
               onClick={() => handleDropdownToggle("facilities")}
               className="text-gray-600 hover:text-gray-800 flex items-center"
             >
-              Facilities
+              Clubs
               <svg
                 className="w-3 h-3 ml-1"
                 fill="none"
@@ -196,16 +232,40 @@ const Nav = () => {
                 href="#"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
-                <BusFront className="md:w-6 w-5" />
-                College Bus
+                Mulearn UCEK
+              </a>
+              
+              <a
+                href="#"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                Google DSC
               </a>
               <a
                 href="#"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
-                <Utensils className="md:w-6 w-5" />
-                Canteen
+                IEEE SB UCEK
               </a>
+              <a
+                href="#"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                Legacy IEDC
+              </a>
+              <a
+                href="#"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                NSS
+              </a>
+              <a
+                href="#"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                FOSS Club
+              </a>
+              
             </div>
           </div>
           <div className="relative">
