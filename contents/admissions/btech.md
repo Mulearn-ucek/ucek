@@ -9,10 +9,14 @@ Admission to Merit and Management Quotas are done by CEE through KEAM.
 No Entrance test is required for getting admission to BTech course under NRI Quota Eligibilty: Candidates who have passed the Higher secondary Examination or Equivalentto with 45% marks in Mathematics ,Physics and Chemistry put together.
 
 #### Fee Details (NRI)
+
+<div class="md-table-wraper" markdown="block">
+
 ||Amount|
 | -- | --|
 | Tuition Fee Per Year |**₹1,05,000/-**
 | Refundable deposit(Interest free) | **₹1,25,000/-**
+</div>
 
 To express interest in future vacancies for B.Tech admission under the NRI quota, please submit the enclosed form. When vacancies arise, the admission process will be conducted in accordance with the NRI prospectus guidelines.
 
@@ -37,13 +41,19 @@ SM - State Merit, MG - Management
 ## Fee Structure
 
 #### Total Fee
+
+<div class="md-table-wraper" markdown="block">
+
 | SEAT | AMOUNT PER YEAR |
 | --- | --- |
 | Merit | **₹36,750/-** |
 | Management | **₹68,250/-** |
 | NRI | **₹1,05,000/-** |
+</div>
 
 #### Detailed Structure
+
+<div class="md-table-wraper" markdown="block">
 
 |  **#** |  **DETAILS OF FEE** |  **FEE (MERIT)** |  **FEE (MANAGEMENT)** |  **METHOD OF REMITTANCE** |
 | --- | --- | --- | --- | --- |
@@ -53,3 +63,5 @@ SM - State Merit, MG - Management
 |  4 |  CAUTION DEPOSIT , DDF |  2000 |  6000 |  Demand Draft In Favour Of Finance Officer, University Of Kerala |
 |  5 |  PTA FEE |  6000 |  8500 |  By Cash At College |
 |  6 |  PLACEMENT FEE |  1000 |  1000 |  By Cash At College |
+
+</div>
