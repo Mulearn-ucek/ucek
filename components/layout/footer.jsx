@@ -36,13 +36,13 @@ const Footer = () => {
           </div>
         </div>
         <div className="bg-white border-t mt-4">
-          <div className="container mx-auto py-4 flex flex-col md:flex-row justify-between items-center text-gray-600">
-            <p className="text-sm ml-6">
+          <div className="text-[11px] md:text-sm container mx-auto p-5 flex flex-col md:flex-row justify-between items-center text-gray-600">
+            <p className="text-center">
               &copy; 2024 University College Of Engineering. All rights
               reserved.
             </p>
-            <div className="mr-6 text-sm">
-              <p>
+            <div>
+              <p className="text-center">
                 Designed and Developed by{" "}
                 <a href="https://mulearn-ucek.netlify.app/">
                   <u>MuLearn Ucek</u>
