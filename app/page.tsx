@@ -16,7 +16,7 @@ export default function Home() {
    <>
     <Topnav /> 
     <Nav/>
-    <Landing/>
+    <HeroSlider/>
     <Quick/>
     <Whyucek/>
     <NewsEvents/>

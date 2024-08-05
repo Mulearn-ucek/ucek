@@ -47,3 +47,5 @@ export function getUpcomingEvents(n="20"): Promise<string[][]> {
               + encodeURIComponent("select * where H > now() and L = 'Yes' order by(`H`) limit "+n);
   return getData(url)
 }
+
+

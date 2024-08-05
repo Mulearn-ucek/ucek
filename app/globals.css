@@ -2,12 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@l
-:root {
+@l: root{
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+};
 
 /* @media (prefers-color-scheme: dark) {
   :root {
@@ -36,4 +35,13 @@ body {
 .md-table-wraper {
   overflow-x: auto;
   max-width: 90dvw;
+}
+.prose {
+  width: 95%;
+}
+
+@media (max-width: 400px) {
+  .prose {
+    font-size: small;
+  }
 }

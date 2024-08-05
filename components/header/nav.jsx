@@ -77,7 +77,7 @@ const Nav = () => {
       !dropdownRef.current.contains(event.target) &&
       !dropDownButtons.current.some((button) => button.contains(event.target))
     ) {
-      // setOpenDropdown(null);
+      setOpenDropdown(null);
     }
   };
 
@@ -119,7 +119,7 @@ const Nav = () => {
           <div className="relative">
             <button
               ref={setButtonRef(1)}
-              onClick={() => handleDropdownToggle("academics")}
+              onClick={() => handleDropdownToggle("cells")}
               className="text-gray-600 hover:text-gray-800 flex items-center"
             >
               Cells & Committes
@@ -141,7 +141,7 @@ const Nav = () => {
             <div
               ref={dropdownRef}
               className={`absolute left-0 mt-2 w-40 bg-white border rounded-xl md:text-[14px] text-[12px] z-10 shadow-lg ${
-                openDropdown === "academics" ? "block" : "hidden"
+                openDropdown === "cells" ? "block" : "hidden"
               }`}
             >
               <Link
@@ -176,81 +176,12 @@ const Nav = () => {
               </Link>
               <Link
                 href="/cells"
-                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 hover:rounded-b-xl gap-2 items-center py-3"
               >
                 <MoreHorizontal/>View All
               </Link>
 
 
-            </div>
-          </div>
-
-          <div className="relative">
-            <button
-              ref={setButtonRef(2)}
-              onClick={() => handleDropdownToggle("facilities")}
-              className="text-gray-600 hover:text-gray-800 flex items-center"
-            >
-              Clubs
-              <svg
-                className="w-3 h-3 ml-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            <div
-              ref={dropdownRef}
-              className={`absolute left-0 mt-2 w-40 bg-white border rounded-xl md:text-[14px] text-[12px] z-10 shadow-lg ${
-                openDropdown === "facilities" ? "block" : "hidden"
-              }`}
-            >
-              <Link
-                href="#"
-                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
-              >
-                Mulearn UCEK
-              </Link>
-              
-              <Link
-                href="#"
-                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
-              >
-                Google DSC
-              </Link>
-              <Link
-                href="#"
-                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
-              >
-                IEEE SB UCEK
-              </Link>
-              <Link
-                href="#"
-                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
-              >
-                Legacy IEDC
-              </Link>
-              <Link
-                href="#"
-                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
-              >
-                NSS
-              </Link>
-              <Link
-                href="#"
-                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
-              >
-                FOSS Club
-              </Link>
-              
             </div>
           </div>
           <div className="relative">
@@ -304,13 +235,82 @@ const Nav = () => {
               </Link>
               <Link
                 href="/departments/gen"
-                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 hover:rounded-b-xl gap-2 items-center py-3"
               >
                 <BookOpenCheck className="md:w-6 w-5" />
                 General Departments
               </Link>
             </div>
           </div>
+          <div className="relative">
+            <button
+              ref={setButtonRef(2)}
+              onClick={() => handleDropdownToggle("clubs")}
+              className="text-gray-600 hover:text-gray-800 flex items-center"
+            >
+              Clubs
+              <svg
+                className="w-3 h-3 ml-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              ref={dropdownRef}
+              className={`absolute left-0 mt-2 w-40 bg-white border rounded-xl md:text-[14px] text-[12px] z-10 shadow-lg ${
+                openDropdown === "clubs" ? "block" : "hidden"
+              }`}
+            >
+              <Link
+                href="#"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                Mulearn UCEK
+              </Link>
+              
+              <Link
+                href="#"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                Google DSC
+              </Link>
+              <Link
+                href="#"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                IEEE SB UCEK
+              </Link>
+              <Link
+                href="#"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                Legacy IEDC
+              </Link>
+              <Link
+                href="#"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                NSS
+              </Link>
+              <Link
+                href="#"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 hover:rounded-b-xl gap-2 items-center py-3"
+              >
+                FOSS Club
+              </Link>
+              
+            </div>
+          </div>
+         
           <Link href="#" className="text-gray-600 hover:text-gray-800">
             About Us
           </Link>

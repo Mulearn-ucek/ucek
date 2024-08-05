@@ -1,98 +1,118 @@
 // app/[slug]/page.js
 
-import fs from 'fs'
-import path from 'path'
-import Topnav from '@/components/header/topnav'
-import Nav from '@/components/header/nav'
-import Footer from '@/components/layout/footer'
+import fs from "fs";
+import path from "path";
+import Topnav from "@/components/header/topnav";
+import Nav from "@/components/header/nav";
+import Footer from "@/components/layout/footer";
 
-import Image from 'next/image'
+import Image from "next/image";
 import ucekImage from "@/public/img/ucek.jpeg";
-import Markdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
-import rehypeRaw from 'rehype-raw'
+import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 
-const contentDir = path.join(process.cwd(), 'contents')
+const contentDir = path.join(process.cwd(), "contents");
 
 export async function generateStaticParams() {
-  const sections = fs.readdirSync(contentDir)
+  const sections = fs.readdirSync(contentDir);
 
   const paths = sections.flatMap((section) => {
-    const articles = fs.readdirSync(path.join(contentDir, section))
-      return articles.map((article) => {
-        return {
-            id: article.replace(/\.md$/, ''),
-            section: section,
-          }
-      })
-    })
-  return paths
+    const articles = fs.readdirSync(path.join(contentDir, section));
+    return articles.map((article) => {
+      return {
+        id: article.replace(/\.md$/, ""),
+        section: section,
+      };
+    });
+  });
+  return paths;
 }
 
-export async function generateMetadata({ params }: { params: { id: string, section: string } }) {
-  const fullPath = path.join(contentDir, params.section, `${params.id}.md`)
+export async function generateMetadata({
+  params,
+}: {
+  params: { id: string; section: string };
+}) {
+  const fullPath = path.join(contentDir, params.section, `${params.id}.md`);
   let title, content;
 
-  try{
-    const fileContents = fs.readFileSync(fullPath, 'utf8')
-    title = fileContents.split('\n',1)[0]
-    content = fileContents.split('\n').slice(1).join('\n')
-  }catch(e){
-    title = "404"
-    content = "Page not found. That's all we know. :-("
+  try {
+    const fileContents = fs.readFileSync(fullPath, "utf8");
+    title = fileContents.split("\n", 1)[0];
+    content = fileContents.split("\n").slice(1).join("\n");
+  } catch (e) {
+    title = "404";
+    content = "Page not found. That's all we know. :-(";
   }
 
   return {
     title: title,
-    description: content
-  }
+    description: content,
+  };
 }
 
-const getArticle = (({id, section }:{id: string, section: string }) => {
-  const fullPath = path.join(contentDir, section, `${id}.md`)
+const getArticle = ({ id, section }: { id: string; section: string }) => {
+  const fullPath = path.join(contentDir, section, `${id}.md`);
   let title, content;
 
-  try{
-    const fileContents = fs.readFileSync(fullPath, 'utf8')
-    title = fileContents.split('\n',1)[0]
-    content = fileContents.split('\n').slice(1).join('\n')
-  }catch(e){
-    title = "404"
-    content = "Page not found. That's all we know. :-("
+  try {
+    const fileContents = fs.readFileSync(fullPath, "utf8");
+    title = fileContents.split("\n", 1)[0];
+    content = fileContents.split("\n").slice(1).join("\n");
+  } catch (e) {
+    title = "404";
+    content = "Page not found. That's all we know. :-(";
   }
-  
-  return { title, content} as { title: string, content: string }
-})
 
-export default async function Post({ params } : { params: { id: string, section: string } }) {
+  return { title, content } as { title: string; content: string };
+};
 
-  const { title, content } = getArticle(params)
+export default async function Post({
+  params,
+}: {
+  params: { id: string; section: string };
+}) {
+  const { title, content } = getArticle(params);
 
-  return (<>
-   <Topnav /> 
-    <Nav/>
-   <div className='h-[30%] relative text-center -z-20'>
-    <Image
-      src={ucekImage}
-      width={1920}
-      height={1080}
-      alt="Slider Image 1"
-      className="h-[300px] w-full object-cover brightness-50"
-    />
-    <div className="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">
-          <h1 className="text-3xl font-bold text-primary-foreground sm:text-4xl md:text-5xl">
-          {title}
+  return (
+    <>
+      <Topnav />
+      <Nav />
+      <div className="h-[30%] relative text-center -z-20">
+        <Image
+          src={ucekImage}
+          width={1920}
+          height={1080}
+          alt="Slider Image 1"
+          className="h-[300px] w-full object-cover brightness-50"
+        />
+        <div className="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">
+          <h1 className="text-2xl font-bold text-primary-foreground sm:text-4xl md:text-5xl">
+            {title}
           </h1>
           <p className="text-xs md:text-lg text-slate-200">
-            {title == "404"? content: ((params.section == "departments" || params.section == "about") && "University College of Engineering, Kariavattom")}
+            {title == "404"
+              ? content
+              : (params.section == "departments" ||
+                  params.section == "about") &&
+                "University College of Engineering, Kariavattom"}
           </p>
-    </div>
-   </div>
-    <div className='z-20 w-full p-5 flex justify-center'>
-      {title != "404" && <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]} className={"prose"}>{content}</Markdown>}
-    </div>
+        </div>
+      </div>
+      <div className="z-20 w-full p-5 flex justify-center">
+        {title != "404" && (
+          <Markdown
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeRaw]}
+            className={"prose"}
+          >
+            {content}
+          </Markdown>
+        )}
+      </div>
 
-    <Footer/>
-  </>
-  )
+      <Footer />
+    </>
+  );
 }

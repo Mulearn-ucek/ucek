@@ -45,7 +45,7 @@ SM - State Merit, MG - Management
 <div class="md-table-wraper" markdown="block">
 
 | SEAT | AMOUNT PER YEAR |
-| --- | --- |
+|:---|:---|
 | Merit | **₹36,750/-** |
 | Management | **₹68,250/-** |
 | NRI | **₹1,05,000/-** |
@@ -65,3 +65,33 @@ SM - State Merit, MG - Management
 |  6 |  PLACEMENT FEE |  1000 |  1000 |  By Cash At College |
 
 </div>
+
+<style>
+
+    .md-table-wraper {
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.md-table-wraper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.md-table-wraper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.md-table-wraper::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.md-table-wraper::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.md-table-wraper {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+</style>
