@@ -18,7 +18,7 @@ import Link from "next/link";
 
 const Nav = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
-  const dropdownRef = useRef(null);
+  const dropdownRef = useRef([]);
   const dropDownButtons = useRef([]);
   const pathname = usePathname();
   const menu = [
@@ -67,6 +67,9 @@ const Nav = () => {
   const setButtonRef = (index) => (element) => {
     dropDownButtons.current[index] = element;
   };
+  const setDropDownRef = (index) => (element) => {
+    dropdownRef.current[index] = element;
+  };
   const handleDropdownToggle = (menu) => {
     setOpenDropdown(openDropdown === menu ? null : menu);
   };
@@ -74,7 +77,7 @@ const Nav = () => {
   const handleClickOutside = (event) => {
     if (
       dropdownRef.current &&
-      !dropdownRef.current.contains(event.target) &&
+      !dropdownRef.current.some((element) => element.contains(event.target)) &&
       !dropDownButtons.current.some((button) => button.contains(event.target))
     ) {
       setOpenDropdown(null);
@@ -139,7 +142,7 @@ const Nav = () => {
               </svg>
             </button>
             <div
-              ref={dropdownRef}
+              ref={setDropDownRef(1)}
               className={`absolute left-0 mt-2 w-40 bg-white border rounded-xl md:text-[14px] text-[12px] z-10 shadow-lg ${
                 openDropdown === "cells" ? "block" : "hidden"
               }`}
@@ -207,7 +210,7 @@ const Nav = () => {
               </svg>
             </button>
             <div
-              ref={dropdownRef}
+              ref={setDropDownRef(2)}
               className={`origin-top-right absolute right-0 md:left-0 mt-2 w-72 bg-white border rounded-xl md:text-[14px] text-[12px] z-10 shadow-lg ${
                 openDropdown === "departments" ? "block" : "hidden"
               }`}
@@ -265,7 +268,7 @@ const Nav = () => {
               </svg>
             </button>
             <div
-              ref={dropdownRef}
+              ref={setDropDownRef(3)}
               className={`absolute left-0 mt-2 w-40 bg-white border rounded-xl md:text-[14px] text-[12px] z-10 shadow-lg ${
                 openDropdown === "clubs" ? "block" : "hidden"
               }`}
