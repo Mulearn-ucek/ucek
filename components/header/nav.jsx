@@ -77,7 +77,7 @@ const Nav = () => {
       !dropdownRef.current.contains(event.target) &&
       !dropDownButtons.current.some((button) => button.contains(event.target))
     ) {
-      // setOpenDropdown(null);
+      setOpenDropdown(null);
     }
   };
 
@@ -119,7 +119,7 @@ const Nav = () => {
           <div className="relative">
             <button
               ref={setButtonRef(1)}
-              onClick={() => handleDropdownToggle("academics")}
+              onClick={() => handleDropdownToggle("cells")}
               className="text-gray-600 hover:text-gray-800 flex items-center"
             >
               Cells & Committes
@@ -141,7 +141,7 @@ const Nav = () => {
             <div
               ref={dropdownRef}
               className={`absolute left-0 mt-2 w-40 bg-white border rounded-xl md:text-[14px] text-[12px] z-10 shadow-lg ${
-                openDropdown === "academics" ? "block" : "hidden"
+                openDropdown === "cells" ? "block" : "hidden"
               }`}
             >
               <Link
@@ -188,7 +188,7 @@ const Nav = () => {
           <div className="relative">
             <button
               ref={setButtonRef(2)}
-              onClick={() => handleDropdownToggle("facilities")}
+              onClick={() => handleDropdownToggle("clubs")}
               className="text-gray-600 hover:text-gray-800 flex items-center"
             >
               Clubs
@@ -210,7 +210,7 @@ const Nav = () => {
             <div
               ref={dropdownRef}
               className={`absolute left-0 mt-2 w-40 bg-white border rounded-xl md:text-[14px] text-[12px] z-10 shadow-lg ${
-                openDropdown === "facilities" ? "block" : "hidden"
+                openDropdown === "clubs" ? "block" : "hidden"
               }`}
             >
               <Link

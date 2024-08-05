@@ -27,8 +27,6 @@ const NewsEvents = () => {
     }, []);
     
 
-    console.log(data);
-
   return (
     <div className="py-10 bg-white">
    <h2 className="text-2xl md:text-[2.6rem] ml-4 md:ml-20 font-bold mb-6 flex items-center">
