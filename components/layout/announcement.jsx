@@ -76,7 +76,7 @@ const Announcement = () => {
         <ExpandableCardDemo cards={cards} />
       </div>
 
-      <div className="w-full md:w-2/3 mt-4 md:mt-10 rounded md:p-24">
+      <div className="w-full md:w-2/3 mt-4 md:mt-10 rounded  md:p-24">
         <p className="text-justify text-sm md:text-base lg:text-lg">
           The college was established in the year 2000 and is functioning in the
           Golden Jubilee Complex of the Kerala University in the Kariavattom

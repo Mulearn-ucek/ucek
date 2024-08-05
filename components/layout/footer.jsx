@@ -41,7 +41,7 @@ const Footer = () => {
               &copy; 2024 University College Of Engineering. All rights
               reserved.
             </p>
-            <div className="mr-6">
+            <div className="mr-6 text-sm">
               <p>
                 Designed and Developed by{" "}
                 <a href="https://mulearn-ucek.netlify.app/">

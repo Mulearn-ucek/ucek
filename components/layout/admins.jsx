@@ -33,7 +33,7 @@ const data = {
     {
       id: 4,
       src: ViceChancellor,
-      name: "Prof.(Dr.) Mohanan Kunnummal",
+      name: "Prof. Mohanan Kunnummal",
       position: "Vice Chancellor",
       org: "University of Kerala",
     },
@@ -53,7 +53,7 @@ const AdministrationPanel = () => {
       <h2 className="text-2xl md:text-[2.6rem] ml-4 md:ml-20 font-bold mb-6 flex items-center">
         <span className="w-2 h-6 bg-blue-500 mr-2"></span> Administration Panel
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 py-10 px-4 md:px-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 py-10 px-4 md:px-20 justify-items-center md:justify-items-start">
         {data.administrationPanel.map((member) => (
           <div key={member.id} className="flex justify-center flex-col">
             <Image

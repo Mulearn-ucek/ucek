@@ -176,7 +176,7 @@ const Nav = () => {
               </Link>
               <Link
                 href="/cells"
-                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 hover:rounded-b-xl gap-2 items-center py-3"
               >
                 <MoreHorizontal/>View All
               </Link>
@@ -184,7 +184,64 @@ const Nav = () => {
 
             </div>
           </div>
-
+          <div className="relative">
+            <button
+              ref={setButtonRef(3)}
+              onClick={() => handleDropdownToggle("departments")}
+              className="text-gray-600 hover:text-gray-800 flex items-center "
+            >
+              Departments
+              <svg
+                className="w-3 h-3 ml-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              ref={dropdownRef}
+              className={`origin-top-right absolute right-0 md:left-0 mt-2 w-72 bg-white border rounded-xl md:text-[14px] text-[12px] z-10 shadow-lg ${
+                openDropdown === "departments" ? "block" : "hidden"
+              }`}
+            >
+              <Link
+                href="/departments/cse"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                <CodeXml className="md:w-6 w-5" />
+                Computer Science &amp; Engineering
+              </Link>
+              <Link
+                href="/departments/ece"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                <Cpu className="md:w-6 w-5" />
+                Electronics &amp; Communication Engineering
+              </Link>
+              <Link
+                href="/departments/it"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                <Network className="md:w-6 w-5" />
+                Information Technology
+              </Link>
+              <Link
+                href="/departments/gen"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 hover:rounded-b-xl gap-2 items-center py-3"
+              >
+                <BookOpenCheck className="md:w-6 w-5" />
+                General Departments
+              </Link>
+            </div>
+          </div>
           <div className="relative">
             <button
               ref={setButtonRef(2)}
@@ -246,71 +303,14 @@ const Nav = () => {
               </Link>
               <Link
                 href="#"
-                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 hover:rounded-b-xl gap-2 items-center py-3"
               >
                 FOSS Club
               </Link>
               
             </div>
           </div>
-          <div className="relative">
-            <button
-              ref={setButtonRef(3)}
-              onClick={() => handleDropdownToggle("departments")}
-              className="text-gray-600 hover:text-gray-800 flex items-center "
-            >
-              Departments
-              <svg
-                className="w-3 h-3 ml-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            <div
-              ref={dropdownRef}
-              className={`origin-top-right absolute right-0 md:left-0 mt-2 w-72 bg-white border rounded-xl md:text-[14px] text-[12px] z-10 shadow-lg ${
-                openDropdown === "departments" ? "block" : "hidden"
-              }`}
-            >
-              <Link
-                href="/departments/cse"
-                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
-              >
-                <CodeXml className="md:w-6 w-5" />
-                Computer Science &amp; Engineering
-              </Link>
-              <Link
-                href="/departments/ece"
-                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
-              >
-                <Cpu className="md:w-6 w-5" />
-                Electronics &amp; Communication Engineering
-              </Link>
-              <Link
-                href="/departments/it"
-                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
-              >
-                <Network className="md:w-6 w-5" />
-                Information Technology
-              </Link>
-              <Link
-                href="/departments/gen"
-                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
-              >
-                <BookOpenCheck className="md:w-6 w-5" />
-                General Departments
-              </Link>
-            </div>
-          </div>
+         
           <Link href="#" className="text-gray-600 hover:text-gray-800">
             About Us
           </Link>
