@@ -34,8 +34,31 @@ body {
 
 .md-table-wraper {
   overflow-x: auto;
-  max-width: 90dvw;
+  max-width: 100%;
 }
+
+.md-table-wraper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.md-table-wraper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.md-table-wraper::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.md-table-wraper::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.md-table-wraper {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
 .prose {
   width: 95%;
 }

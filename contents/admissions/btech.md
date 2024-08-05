@@ -6,7 +6,7 @@ Admission to Merit and Management Quotas are done by CEE through KEAM.
 
 ## NRI Admissions
 
-No Entrance test is required for getting admission to BTech course under NRI Quota Eligibilty: Candidates who have passed the Higher secondary Examination or Equivalentto with 45% marks in Mathematics ,Physics and Chemistry put together.
+No Entrance test is required for getting admission to BTech course under NRI Quota Eligibilty: Candidates who have passed the Higher secondary Examination or Equivalent with 45% marks in Mathematics, Physics and Chemistry put together.
 
 #### Fee Details (NRI)
 
@@ -57,41 +57,9 @@ SM - State Merit, MG - Management
 
 |  **#** |  **DETAILS OF FEE** |  **FEE (MERIT)** |  **FEE (MANAGEMENT)** |  **METHOD OF REMITTANCE** |
 | --- | --- | --- | --- | --- |
-|  1 |  TUITION FEE |  26,750(For Semester 1 and Semester 2) |  58,250(For Semester 1 and Semester 2) |  Demand Draft In Favour Of Finance Officer, University Of Kerala |
-|  2 |  ADMISSION FEE |  160 |  160 |  By Cash At College |
-|  3 |  SPECIAL,AFFILIATION & SPORTS FEE |  2135 |  2135 |  Demand Draft In Favour Of Finance Officer, University Of Kerala |
-|  4 |  CAUTION DEPOSIT , DDF |  2000 |  6000 |  Demand Draft In Favour Of Finance Officer, University Of Kerala |
-|  5 |  PTA FEE |  6000 |  8500 |  By Cash At College |
-|  6 |  PLACEMENT FEE |  1000 |  1000 |  By Cash At College |
+|  1 |  TUITION FEE |  26,750 (For Semester 1 and Semester 2) | 58,250 (For Semester 1 and Semester 2) |  Demand Draft In Favour Of Finance Officer, University Of Kerala |
+|  2 |  OFFICE FEE |  4,950 |  8,950 |  By Cash At College |
+|  3 |  PTA FEE |  6000 |  8500 |  By Cash At College |
+|  4 |  PLACEMENT FEE |  1000 |  1000 |  By Cash At College |
 
 </div>
-
-<style>
-
-    .md-table-wraper {
-    overflow-x: auto;
-    max-width: 100%;
-}
-
-.md-table-wraper::-webkit-scrollbar {
-    height: 8px;
-}
-
-.md-table-wraper::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 4px;
-}
-
-.md-table-wraper::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px;
-}
-
-.md-table-wraper::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-.md-table-wraper {
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-}
-</style>

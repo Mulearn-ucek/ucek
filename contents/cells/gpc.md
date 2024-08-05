@@ -21,6 +21,5 @@ Composition of Green Protocol Cell:
 | Mrs Anupama Sathyan S | Assistant Professor | IT dept |
 | Mrs Salu Lekshman | Assistant Professor | IT dept |
 | Mrs Khadira Safar | Assistant Professor | EEE dept |
-| Mrs Priyamvadha | Assistant Professor | Physics depth |
 | Mrs Anu S Ram | Assistant Professor | ECE dept |
 | Mrs Suma C S | Assistant Professor | CSE dept |
