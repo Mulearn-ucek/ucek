@@ -6,11 +6,13 @@ import moment from "moment";
 import { CalendarDays, Clock, SquareArrowOutUpRight } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import Image from "next/image";
+import { m } from "framer-motion";
 
-const marqParams = {
+var marqParams = {
   autoFill: true,
   pauseOnHover: true,
   speed: 80,
+  play: true,
 };
 
 const NewsEvents = () => {
@@ -28,6 +30,11 @@ const NewsEvents = () => {
         console.error("An error occurred:", error);
       });
   }, []);
+
+  if (data?.length < 3) {
+    marqParams.autoFill = false;
+    marqParams.play = false;
+  }
 
   return (
     <div className="py-10 bg-white">
