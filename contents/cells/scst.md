@@ -18,8 +18,13 @@ UCEK constituted SC/ST Committee to help the SC/ST categories integrate with oth
 1. To circulate State Govt.and UGC’s decisions about different scholarship programs.  
 2. To communicate with the students and motivate them for better future planning.  
 
-## COMMITTEE MEMBERS
+## MEMBERS
 
-| Member | Designation | Department |
+| # | Name | Contact |
 | --- | --- | --- |
-| TBA | TBA | TBA |
+| 1 | Smt. Nithu Prabha N (Convenor) | 9539126067
+| 2 | Smt. Nimmi Kokila M V | 9995430421
+| 3 | Smt. Aswathy V | 9846835893
+| 4 | Sri. Sreejith SN | 9633312443
+| 5 | Sri. Biju R | 9496394782
+| 6 | Sri. Sreeraj S | 9961260387

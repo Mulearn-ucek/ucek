@@ -9,7 +9,7 @@ const WhyUcek = () => {
     >
       <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-center p-4">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Why UCEK?</h2>
-        <p class="text-white text-sm md:text-xl  font-sans md:px-44 md:py-6">
+        <p className="text-white text-sm md:text-xl  font-sans md:px-44 md:py-6">
           University College of Engineering Kariavattom (UCEK), the pride of the
           Kariavattom campus spread across
           <strong> 400 acres </strong>

@@ -34,7 +34,16 @@ To train women to acquire wide range of skills and knowledge and to develop and 
   
 ### Members of Woman Empowerment Cell:
 
-
-| **Members** | **Designation** | **Department** |
+| # | **Name** | **Contact** |
 | --- | --- | --- |
-| TBA | TBA | TBA
+| 1 | Smt. Vidhya S | 8281867712
+| 2 | Smt. G.S Aiswarya Thankachi | 8547958102
+| 3 | Smt.Sabeena AS | 9946559271
+| 4 | Smt. Gargy G | 8921737320
+| 5 | Smt. Seena R S | 9142331313
+
+
+
+
+
+

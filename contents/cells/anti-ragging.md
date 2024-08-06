@@ -4,19 +4,21 @@ Ragging is any disorderly conduct whether by words spoken or written or by an ac
 
 To prevent ragging in this campus an anti-ragging cell is constituted. In case of any ragging directly contact in person or over phone any of the members. The Anti Ragging Committee consists of The Principal as the chairperson and with the following members
 
+## MEMBERS
 
-| **Cell Members** | **Details** |
-| --- | --- |
-| Chairman | Dr. Bisharathu Beevi A., Principal |
-| Representative of Civil Administration | Counselor, Sreekariam |
-| Representative of Police Administration | Sub Inspector of Police, Sreekariam |
-| JR in campus administration | N R.Sreela |
-| Representatives of Faculty Members | Saina A R, Assistant Professor,UG Dean |
-| | Diana Mathew, Assistant Professor IT |     
-| | Divya D T, Assistant Professor,HOD, CSE |     
-| | Indusalini G, Assistant Professor,HOD, ECE |
-| | Sangeetha S Nair, Assistant Professor,HOD,IT |
-| Representatives of Parents | Vice President, PTA |
-| Representatives of Students | Chairman, College Union |
-| Representatives of Non Teaching Staffs | Section Officer | 
-| | Assistant Registrar |
+| # | Member Name | Contact
+| --- | --- | -- |
+| 1 | Dr. Bisharathu Beevi A (Principal) | 9496102279
+| 2 | Sri. Binishlal K V | 0471-2592100
+| 3 | Smt. Mini K P | 8281556762
+| 4 | Smt. Sheeja Kumari T | 9496106342
+| 5 | Smt. Saina A R (UG-Dean) | 9447218206
+| 6 | Smt. Indu Salini G (HOD-ECE) | 9388011160
+| 7 | Smt. Sangeetha S Nair (HOD-IT) | 9447125125
+| 8 | Smt. Divya D T (HOD-CSE) | 9656468540
+| 9 | Smt. Bhanu S Nair (HOD- General) | 9895911465
+| 10 | Sri. Aravind A | 8281145450
+| 11 | Sri. Shibu Kumar  | 9447145100
+| 12 | Smt. Sradha R Kurup | 9400783434
+| 13 | Sri. Alamsha | 8547395033
+| 14 | Smt. Beena Thomas | 9562185600
