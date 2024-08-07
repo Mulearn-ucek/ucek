@@ -1,14 +1,12 @@
 Office
 The Administrative Office of University College of Engineering works under the direct supervision of Kerala university and consists of Assistant Registrar, Administrative Officer and a Senior Grade Assistant. All matters related to staff and students of the college are processed and maintained here.
 
-## **Office Timings**
-
-#### 
+## Office Timings
 
 1. Monday to Saturday - **10:00 am to 5:00 pm**
 2. Holidays - **All Second Saturdays, Sundays and Govt.Holidays**
 
-## **Services Available**
+## Services Available:
 
 ||||
 | --- | --- | --- |

@@ -23,34 +23,19 @@ const Nav = () => {
   const pathname = usePathname();
   const menu = [
     {
-      id: 1,
-      title: "Associations",
-      link: "",
-    },
-    {
       id: 2,
       title: "Admissions",
       link: "/admissions/btech",
     },
     {
       id: 3,
-      title: "PTA",
-      link: "",
-    },
-    {
-      id: 4,
       title: "Placements",
-      link: "",
-    },
-    {
-      id: 5,
-      title: "Students Portal",
-      link: "",
+      link: "/cells/placement",
     },
     {
       id: 6,
-      title: "Cells & Committes",
-      link: "",
+      title: "Grievance Redressal",
+      link: "/cells/grievance",
     },
     {
       id: 7,
@@ -61,7 +46,12 @@ const Nav = () => {
       id: 8,
       title: "Image Gallery",
       link: "",
-    }
+    },
+    {
+      id: 1,
+      title: "Contact Us",
+      link: "/about/contact",
+    },
   ];
 
   const setButtonRef = (index) => (element) => {
@@ -314,9 +304,79 @@ const Nav = () => {
             </div>
           </div>
          
-          <Link href="#" className="text-gray-600 hover:text-gray-800">
-            About Us
-          </Link>
+          <div className="relative">
+            <button
+              ref={setButtonRef(2)}
+              onClick={() => handleDropdownToggle("about")}
+              className="text-gray-600 hover:text-gray-800 flex items-center"
+            >
+              About Us
+              <svg
+                className="w-3 h-3 ml-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              ref={setDropDownRef(3)}
+              className={`absolute left-0 mt-2 w-40 bg-white border rounded-xl md:text-[14px] text-[12px] z-10 shadow-lg ${
+                openDropdown === "about" ? "block" : "hidden"
+              }`}
+            >
+              <Link
+                href="/about/college"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                College
+              </Link>
+              
+              <Link
+                href="/about/principal"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                Our Principal
+              </Link>
+              <Link
+                href="/about/itpolicy"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                Internet And Campus Network Usage Policy
+              </Link>
+              <Link
+                href="/about/office-bearers"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                Office Bearers
+              </Link>
+              <Link
+                href="/about/disclosures"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                Disclosures
+              </Link>
+              <Link
+                href="/about/achievements"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 hover:rounded-b-xl gap-2 items-center py-3"
+              >
+                Achievements
+              </Link>
+              <Link
+                href="/about/contact"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
         </nav>
       </div>
       <div className="md:h-[50px] bg-white border-t-[1.8px] border-[#2D3E50] w-full flex items-center ">

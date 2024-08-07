@@ -4,13 +4,6 @@ The college has established Research and Development Cell (R&D) which aims to nu
 Research and Development (R&D) flourishes where young minds and experienced faculty work synergistically.  
 The college has a Research and Development Cell which is constituted by a 4 member research committee each from four of our departments  
 
-## R & D cell team
-
-Research and Development Cell comprising of the following members
-
-| Member | Department |
-| --- | --- |
-| TBA | TBA |
 
 ## Objectives of R & D Cell
 
@@ -58,3 +51,13 @@ It is constituted to strengthen research activities among students & staff, enha
 * Provide Ambience for progressive Research.  
 * Engage in Collaborative Research.  
 * Pursue focused research towards International Expertise.  
+
+## R & D cell team
+
+Research and Development Cell comprising of the following members
+
+| Member | Department |
+| --- | --- |
+| Rohini P S | AP in ECE |
+| Sabeena A S | AP in IT |
+| Manu V Kumar | AP in CSE |
