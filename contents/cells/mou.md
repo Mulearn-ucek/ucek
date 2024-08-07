@@ -32,4 +32,8 @@ MoU Cell comprising of the following staff members:
 
 | **Members** | **Designation** | **Department** |
 | --- | --- | --- |
-| TBA | TBA | TBA
+| Rekhamole G | Asst. Professor | Computer Science & Engineering |
+| Minu J Mohan | Asst. Professor | Computer Science & Engineering |
+| Vidhya S | Asst. Professor | Electronics & Communication Engineering |
+| Krishna J S | Asst. Professor | Information Technology |
+

@@ -12,14 +12,25 @@ const MoreUCEK = () => {
       <div className="flex justify-center items-center ">
         <span className="block w-20 h-1 bg-blue-500 "></span>
       </div>
-      <div className="flex flex-col md:flex-row px-10 py-5 md:py-0 justify-center gap-4 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 px-10 py-5 md:py-0 justify-center gap-4 mt-8">
         <button onClick={()=>router.push("/admissions/btech")} className="text-white border border-white rounded-lg px-6 py-3 flex items-center justify-between hover:bg-white hover:text-blue-900 transition duration-300">
-          Admissions <span className="ml-2">&rarr;</span>
+          Admissions (B-Tech) <span className="ml-2">&rarr;</span>
         </button>
         <button onClick={()=> router.push("/about/disclosures")} className="text-white border border-white rounded-lg px-6 py-3 flex items-center justify-between hover:bg-white hover:text-blue-900 transition duration-300">
           Disclosures <span className="ml-2">&rarr;</span>
         </button>
-       
+        <button onClick={()=> router.push("/about/office")} className="text-white border border-white rounded-lg px-6 py-3 flex items-center justify-between hover:bg-white hover:text-blue-900 transition duration-300">
+          Office <span className="ml-2">&rarr;</span>
+        </button>
+        <button onClick={()=> router.push("/about/principal")} className="text-white border border-white rounded-lg px-6 py-3 flex items-center justify-between hover:bg-white hover:text-blue-900 transition duration-300">
+          Our Principal <span className="ml-2">&rarr;</span>
+        </button>
+        <button onClick={()=> router.push("/about/itpolicy")} className="text-white border border-white rounded-lg px-6 py-3 flex items-center justify-between hover:bg-white hover:text-blue-900 transition duration-300">
+          Internet And Campus Network Usage Policy <span className="ml-2">&rarr;</span>
+        </button>
+        <button onClick={()=> router.push("/about/achievements")} className="text-white border border-white rounded-lg px-6 py-3 flex items-center justify-between hover:bg-white hover:text-blue-900 transition duration-300">
+          Achievements <span className="ml-2">&rarr;</span>
+        </button>
       </div>
     </div>
     </div>

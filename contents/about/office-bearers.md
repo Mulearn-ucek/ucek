@@ -1,24 +1,25 @@
 Office Bearers
 <table align="left" cellpadding="5">
-<tr>
+<tr class="flex items-center">
 <td><img height="180" src="/img/administrative/chancellor.jpg" width="137"/></td>
-<td><h2 style="color:#C63">Chancellor</h2>
-<h2>Shri. Arif Muhammed Khan</h2>
-<h4>The Hon'ble Governor of Kerala</h4>
+<td class="flex flex-col"><span style="color:#C63" class="text-xl font-bold"> 
+Chancellor</span>
+<span class="text-2xl font-bold">Shri. Arif Muhammed Khan</span>
+The Hon'ble Governor of Kerala
 </td>
 </tr>
-<tr>
+<tr class="flex items-center">
 <td><img height="180" src="/img/administrative/vice_chancellor.jpg" width="137"/></td>
-<td><h2 style="color:#C63"> Vice Chancellor </h2>
-<h2>Dr. V. P. Mahadevan Pillai </h2>
-<h4>University of Kerala</h4>
+<td class="flex flex-col"><span style="color:#C63" class="text-xl font-bold"> Vice Chancellor </span>
+<span class="text-2xl font-bold">Prof. (Dr.) Mohanan Kunnummal</span>
+University of Kerala
 </td>
 </tr>
-<tr>
+<tr class="flex items-center">
 <td><img height="180" src="/img/administrative/pro_chancellor.jpg" width="137"/></td>
-<td><h2 style="color:#C63"> Pro Vice Chancellor </h2>
-<h2>Dr. Ajayakumar P. P. </h2>
-<h4>University of Kerala</h4>
+<td class="flex flex-col"><span style="color:#C63" class="text-xl font-bold"> Pro Chancellor</span>
+<span class="text-2xl font-bold">Dr. R. Bindu</span>
+University of Kerala
 </td>
 </tr>
 </table>

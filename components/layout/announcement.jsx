@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import { ExpandableCardDemo } from "../ui/expandable-card";
 
 const Announcement = () => {
