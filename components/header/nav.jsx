@@ -346,22 +346,28 @@ const Nav = () => {
                 Our Principal
               </Link>
               <Link
-                href="/about/itpolicy"
-                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
-              >
-                Internet And Campus Network Usage Policy
-              </Link>
-              <Link
                 href="/about/office-bearers"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
                 Office Bearers
               </Link>
               <Link
+                href="/faculties"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                Faculties
+              </Link>
+              <Link
                 href="/about/disclosures"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
                 Disclosures
+              </Link>
+              <Link
+                href="/about/itpolicy"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
+                Internet And Campus Network Usage Policy
               </Link>
               <Link
                 href="/about/achievements"

@@ -1,9 +1,9 @@
+import { get } from "http";
 import Papa from "papaparse";
 
 export const CONTENT_SHEET_ID = "1oTIT-gv8BENbkwrlaYaXg6dEjSndyT2vDWKZnAJO39g"
 export const EVENT_SHEET_ID = "1JF8JCd01dGp1s3iFiriOUHZxlMro63vCAf5Qsm7RNEE"
-export const FACULTY_SHEET_ID = "1JF8JCd01dGp1s3iFiriOUHZxlMro63vCAf5Qsm7RNEE"
-
+export const FACULTY_SHEET_ID = "1xz8r0PBP5Z3mdH2VC7oSuumJ5inh0ZIvGANrcPn5Z_E"
 
 
 export function getData(url:string): Promise<string[][]> {
@@ -30,7 +30,6 @@ export function getImgLink(link: string) {
   );
 }
 
-
 export function getCarouselImages(n="10"): Promise<string[][]> {
   const url = "https://docs.google.com/spreadsheets/d/"
               + CONTENT_SHEET_ID
@@ -54,5 +53,3 @@ export function getUpcomingEvents(n="20"): Promise<string[][]> {
               + encodeURIComponent("select * where H > now() and L = 'Yes' order by(`H`) limit "+n);
   return getData(url)
 }
-
-

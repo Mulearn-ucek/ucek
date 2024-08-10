@@ -25,8 +25,8 @@ const MoreUCEK = () => {
         <button onClick={()=> router.push("/about/principal")} className="text-white border border-white rounded-lg px-6 py-3 flex items-center justify-between hover:bg-white hover:text-blue-900 transition duration-300">
           Our Principal <span className="ml-2">&rarr;</span>
         </button>
-        <button onClick={()=> router.push("/about/itpolicy")} className="text-white border border-white rounded-lg px-6 py-3 flex items-center justify-between hover:bg-white hover:text-blue-900 transition duration-300">
-          Internet And Campus Network Usage Policy <span className="ml-2">&rarr;</span>
+        <button onClick={()=> router.push("/faculties")} className="text-white border border-white rounded-lg px-6 py-3 flex items-center justify-between hover:bg-white hover:text-blue-900 transition duration-300">
+          Faculty Details<span className="ml-2">&rarr;</span>
         </button>
         <button onClick={()=> router.push("/about/achievements")} className="text-white border border-white rounded-lg px-6 py-3 flex items-center justify-between hover:bg-white hover:text-blue-900 transition duration-300">
           Achievements <span className="ml-2">&rarr;</span>

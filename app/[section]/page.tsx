@@ -13,6 +13,7 @@ import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import Link from "next/link";
 import { LinkIcon } from "lucide-react";
+import { notFound } from "next/navigation";
 
 const contentDir = path.join(process.cwd(), "contents");
 
@@ -93,6 +94,8 @@ export default async function Post({
   params: { id: string; section: string };
 }) {
   const { title, contents } = getArticle(params);
+
+  if(title == "404") return notFound();
 
   return (
     <>
