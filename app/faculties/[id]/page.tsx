@@ -71,7 +71,7 @@ export default async function Post({
         </div>
       </div>
       <div className="z-20 w-full p-5 flex justify-center">
-        <div className="w-full md:w-3/4 lg:w-1/2 grid grid-cols-2 gap-4">
+        <div className="w-full md:w-3/4 lg:w-1/2 md:grid-cols-2 grid grid-cols-1 gap-4">
         {faculties && faculties.map((faculty, index) => (
               <div className="flex" key={`id-${index}`}>
                 <Image
