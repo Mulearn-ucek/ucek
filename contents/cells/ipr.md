@@ -19,5 +19,4 @@ The University College of Engineering (UCEK) recognizes the importance of genera
 
 | Sl. no | Committee Members | Desgnaton | Role |
 | --- | --- | --- | --- |
-| 1   | Al Sameera B.N | Asst. Professor ECE | Member |
-| 2   | Gargy G | Asst. Professor CSE | Member |
+| 1   | Gargy G | Asst. Professor CSE | Member |
