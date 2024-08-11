@@ -55,7 +55,7 @@ const AdministrationPanel = () => {
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 py-10 px-4 md:px-20 justify-items-center md:justify-items-start">
         {data.administrationPanel.map((member) => (
-          <div key={member.id} className="flex justify-center flex-col">
+          <div key={member.id} className="flex justify-center flex-col w-64 h-[27rem]">
             <Image
               src={member.src}
               alt={`Member ${member.id}`}
@@ -64,7 +64,7 @@ const AdministrationPanel = () => {
               height={250}
             />
             <div className="">
-              <h3 className="text-xl md:text-2xl font-semibold">
+              <h3 className="text-xl md:text-2xl font-semibold pr-[30px]">
                 {member.name}
               </h3>
               <p className="text-gray-500">{member.position}</p>

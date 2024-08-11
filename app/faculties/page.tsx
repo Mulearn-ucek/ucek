@@ -25,7 +25,6 @@ export default async function Post({
 }: {
   params: { id: string; section: string };
 }) {
-
   return (
     <>
       <Topnav />
@@ -47,35 +46,35 @@ export default async function Post({
           </p>
         </div>
       </div>
-      <div className="z-20 w-full p-5 md:p-10 grid gap-5 justify-center grid-cols-1 md:grid-cols-2">
-          <Link
-            href={`/faculties/cse`}
-            className="flex bg-slate-100 border shadow-lg flex-col justify-center p-5 scale-100 rounded hover:scale-105 transition-transform items-center gap-3"
-          >
-            <CodeXml size={40} />
-             Computer Science and Engineering
-          </Link>
-          <Link
-            href={`/faculties/ece`}
-            className="flex bg-slate-100 border shadow-lg flex-col  p-5 scale-100 rounded hover:scale-105 transition-transform items-center gap-3"
-          >
-            <Cpu size={40}  />
-            Electronics and Communication Engineering
-          </Link>
-          <Link
-            href={`/faculties/it`}
-            className="flex bg-slate-100 border shadow-lg flex-col p-5 scale-100 rounded hover:scale-105 transition-transform items-center gap-2"
-          >
-            <Network size={40}  />
-            Information Technology
-          </Link>
-          <Link
-            href={`/faculties/gen`}
-            className="flex bg-slate-100 border shadow-lg flex-col p-5 scale-100 rounded hover:scale-105 transition-transform items-center gap-2"
-          >
-            <BookOpenCheck size={40} />
-            General Sciences
-          </Link>
+      <div className="z-20 w-full p-5 md:p-10 grid gap-10 justify-center grid-cols-1 md:grid-cols-2">
+        <Link
+          href={`/faculties/cse`}
+          className="flex bg-[#dbdbdb62] border text-center shadow-lg flex-col justify-center py-20 scale-100 rounded hover:scale-105  transition-transform items-center gap-3"
+        >
+          <CodeXml size={40} />
+          Computer Science and Engineering
+        </Link> 
+        <Link
+          href={`/faculties/ece`}
+          className="flex bg-[#dbdbdb62] border text-center shadow-lg flex-col  py-20 scale-100 rounded hover:scale-105 transition-transform items-center gap-3"
+        >
+          <Cpu size={40} />
+          Electronics and Communication Engineering
+        </Link>
+        <Link
+          href={`/faculties/it`}
+          className="flex bg-[#dbdbdb62] border text-center shadow-lg flex-col py-20 scale-100 rounded hover:scale-105 transition-transform items-center gap-2"
+        >
+          <Network size={40} />
+          Information Technology
+        </Link>
+        <Link
+          href={`/faculties/gen`}
+          className="flex bg-[#dbdbdb62] border text-center shadow-lg flex-col py-20 scale-100 rounded hover:scale-105 transition-transform items-center gap-2"
+        >
+          <BookOpenCheck size={40} />
+          General Sciences
+        </Link>
       </div>
 
       <Footer />

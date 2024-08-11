@@ -40,7 +40,7 @@ const Nav = () => {
     {
       id: 7,
       title: "Achievements",
-      link: "",
+      link: "/about/achievements",    
     },
     {
       id: 8,
@@ -201,7 +201,7 @@ const Nav = () => {
             </button>
             <div
               ref={setDropDownRef(2)}
-              className={`origin-top-right absolute right-0 md:left-0 mt-2 w-72 bg-white border rounded-xl md:text-[14px] text-[12px] z-10 shadow-lg ${
+              className={`origin-top-right absolute -right-10 md:right-0 md:left-0 mt-2 w-72 bg-white border rounded-xl md:text-[14px] text-[12px] z-10 shadow-lg ${
                 openDropdown === "departments" ? "block" : "hidden"
               }`}
             >
@@ -259,7 +259,7 @@ const Nav = () => {
             </button>
             <div
               ref={setDropDownRef(3)}
-              className={`absolute left-0 mt-2 w-40 bg-white border rounded-xl md:text-[14px] text-[12px] z-10 shadow-lg ${
+              className={`absolute -right-10 md:left-0 mt-2 w-44 bg-white border rounded-xl md:text-[14px] text-[12px] z-10 shadow-lg ${
                 openDropdown === "clubs" ? "block" : "hidden"
               }`}
             >
@@ -267,6 +267,7 @@ const Nav = () => {
                 href="#"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
+              <Image src={"/logos/mulearn.png"} width={30} height={30} alt="logo"/>
                 Mulearn UCEK
               </Link>
               
@@ -274,30 +275,35 @@ const Nav = () => {
                 href="#"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
+                 <Image src={"/logos/gdsc.png"} width={30} height={30} alt="logo"/>
                 Google DSC
               </Link>
               <Link
                 href="#"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
+                 <Image src={"/logos/ieee.png"} width={30} height={30} alt="logo"/>
                 IEEE SB UCEK
               </Link>
               <Link
                 href="#"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
+                 <Image src={"/logos/iedc.png"} width={30} height={30} alt="logo"/>
                 Legacy IEDC
               </Link>
               <Link
                 href="#"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
+                 <Image src={"/logos/nss.png"} width={30} height={30} alt="logo"/>
                 NSS
               </Link>
               <Link
                 href="#"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 hover:rounded-b-xl gap-2 items-center py-3"
               >
+                 <Image src={"/logos/foss.png"} width={30} height={30} alt="logo"/>
                 FOSS Club
               </Link>
               
@@ -328,7 +334,7 @@ const Nav = () => {
             </button>
             <div
               ref={setDropDownRef(3)}
-              className={`absolute left-0 mt-2 w-40 bg-white border rounded-xl md:text-[14px] text-[12px] z-10 shadow-lg ${
+              className={` absolute right-0 mt-2 w-40 bg-white border rounded-xl md:text-[14px] text-[12px] z-10 shadow-lg ${
                 openDropdown === "about" ? "block" : "hidden"
               }`}
             >

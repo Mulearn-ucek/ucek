@@ -1,4 +1,4 @@
-<h2>COLLEGE UNION</h2>
+COLLEGE UNION
 <p>The UCE (University College of Engineering Kariavattom) has a dynamic student union constituted every year, which looks after student’s well-being through various programmes and events.<br/> The College Union comprises of:<br/>
 1.  Hari Krishna S (College union chairman –S8 ECE)<br/>
 2.  Aromal CJ (General Secretary – S8 CSE)<br/>
