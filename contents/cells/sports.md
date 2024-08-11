@@ -1,4 +1,4 @@
-<h2>Sports</h2>
+Sports
 <p>Every year the college conducts various sports tournaments such as Cricket, Football and volleyball to shape up and enhance the sports talent in each student.</p>
 <h2>Cricket Team</h2>
 <img height="250px" src="images/union15.jpg" width="300px"/><br/>

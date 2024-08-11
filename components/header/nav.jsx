@@ -40,7 +40,7 @@ const Nav = () => {
     {
       id: 7,
       title: "Achievements",
-      link: "",
+      link: "/about/achievements",    
     },
     {
       id: 8,

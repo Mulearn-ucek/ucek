@@ -38,19 +38,18 @@ Students are expected to attend all classes without fail. If for unavoidable rea
 11.  Consumption or possession of alcoholic beverages and any form of substance abuse is strictly prohibited and will be severely dealt with.
     
 12.  Any student
-    
-    *   Who is persistently insubordinate,
+
+       - Who is persistently insubordinate,
+            
+       - Who is habitually irregular in attendance or inattentive to his work in the classes.
+            
+       - Who is repeatedly or willfully mischievous, or obscene in words or act,
+            
+       - Who is guilty of fraud or malpractices at examinations,
+            
+       - Who indulges in ragging junior students
         
-    *   Who is habitually irregular in attendance or inattentive to his work in the classes.
-        
-    *   Who is repeatedly or willfully mischievous, or obscene in words or act,
-        
-    *   Who is guilty of fraud or malpractices at examinations,
-        
-    *   Who indulges in ragging junior students
-        
-    
-    Will be liable to be punished according to the decision of the College Council.
+   Will be liable to be punished according to the decision of the College Council.
     
 13.  Students must work quietly while in library or spend time in such a way as not to cause any interference with the work of others.
     
