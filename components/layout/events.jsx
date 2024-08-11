@@ -7,6 +7,7 @@ import { CalendarDays, Clock, SquareArrowOutUpRight } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import Image from "next/image";
 import { m } from "framer-motion";
+import { resolveClubIcon } from "@/lib/utils";
 
 var marqParams = {
   autoFill: true,
@@ -55,15 +56,24 @@ const NewsEvents = () => {
             {data?.map((item, index) => (
               <div
                 key={index}
-                className="min-w-[400px] max-w-[300px] h-[16rem] p-4 bg-white rounded-lg shadow-md border mx-10 flex-shrink-0"
+                className="min-w-[400px] max-w-[300px] h-[18rem] p-4 bg-white rounded-lg shadow-md border mx-10 flex-shrink-0"
               >
+                <div className="flex items-center justify-between">
+
                 <span
                   className={`px-2 py-1 w-24 flex justify-center rounded-full text-white text-sm font-semibold mb-4 ${"bg-red-500"}`}
-                ></span>
-                <div className="w-full flex justify-between">
+                  ></span>
+                  <Image
+                    src={resolveClubIcon(item[6])}
+                    width={35}
+                    height={35}
+                    alt="Club Icon"
+                  />
+                  </div>
+                <div className="w-full flex items-center gap-5">
                   <p className="text-lg font-semibold mb-2">{item[3]}</p>
                   <a href={`https://eventsatucek.vercel.app/e/${item[1]}`}>
-                    <SquareArrowOutUpRight size={15} />
+                    <SquareArrowOutUpRight size={15} className="mb-2"/>
                   </a>
                 </div>
                 <Image
