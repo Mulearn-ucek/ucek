@@ -85,11 +85,12 @@ export default async function Post({
                   width={150}
                   height={150}
                   alt={faculty[0]}
-                  className="rounded-lg w-32 h-32 md:w-40 md:h-40 aspect-square"
+                  className="rounded-lg aspect-4/5"
                 />
                 <div className="ml-5">
                   <h1 className="text-xl font-bold">{faculty[0]}</h1>
                   <p className="text-sm">{faculty[1]}</p>
+                  {params.id == "gen" && <p className="text-sm text-gray-700 mt-1">{faculty[4]}</p>}
                   <p className=" text-sm mt-2 text-gray-500">
                     Qualification: {faculty[2]}
                   </p>
@@ -137,6 +138,6 @@ function getFacultyDetais(id: string): Promise<string[][]> {
     "https://docs.google.com/spreadsheets/d/" +
     FACULTY_SHEET_ID +
     `/gviz/tq?tqx=out:csv&sheet=${id}&tq=` +
-    encodeURIComponent("select C, D, E, F");
+    encodeURIComponent(`select C, D, E, F${id == "gen" ? ", G" : ""}`)
   return getData(url);
 }

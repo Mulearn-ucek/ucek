@@ -4,6 +4,19 @@ Admissions (B.Tech)
 Admission to Merit and Management Quotas are done by CEE through KEAM.
 <center><h3>KEAM CODE : UCK</h3></center>
 
+**Document To Be Submitted At The College During Admission:**
+1. Data Sheet of KEAM
+2. Allotment Memo
+3. Certificate to prove Date Of Birth
+4. Transfer Certificate from the Institution last attended and Conduct Certificate
+5. Original Marklist of Higher Secondary or equivalent
+6. Migration Certificate, if required
+7. Receipt of fee remitted to CEE
+8. Eligibility certificate, if required
+9. Physical Fitness Certificate
+10. Originals Of The All Documents And Certificates
+11. DD Taken For The Tution Fee
+
 ## NRI Admissions
 
 No Entrance test is required for getting admission to BTech course under NRI Quota Eligibilty: Candidates who have passed the Higher secondary Examination or Equivalent with 45% marks in Mathematics, Physics and Chemistry put together.
