@@ -17,6 +17,9 @@ const config: Config = {
           '3/4': '3 / 4',
           '4/5': '4 / 5',
       },
+      screens: {
+        xs: "400px",
+      },
     },
   },
   plugins: [

@@ -3,9 +3,25 @@ import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
-import { Pointer } from "lucide-react";
+import { BellPlus, BookUser, CalendarDays, Pointer, ScrollText } from "lucide-react";
+import Markdown from "react-markdown";
 
-export function ExpandableCardDemo({ cards }: any) {
+function getAnnouncementIcon(announcementType: string, size: number = 32) {
+  switch (announcementType) {
+    case "Events":
+      return <CalendarDays size={size}/>;
+    case "Results":
+      return <ScrollText size={size} />;
+    case "News":
+      return <BellPlus size={size}/>;
+    case "Admission":
+      return <BookUser  size={size}/>;
+    default:
+      return <BellPlus size={size}/>;
+  }
+}
+
+export function ExpandableCard({ cards }: any) {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
     null
   );
@@ -67,32 +83,25 @@ export function ExpandableCardDemo({ cards }: any) {
               <CloseIcon />
             </motion.button>
             <motion.div
-              layoutId={`card-${active.title}-${id}`}
+              layoutId={`card-${id}`}
               ref={ref}
               className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white  sm:rounded-3xl overflow-hidden"
             >
-              <motion.div layoutId={`image-${active.title}-${id}`}>
-                <Image
-                  priority
-                  width={200}
-                  height={200}
-                  src={active.src}
-                  alt={active.title}
-                  className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
-                />
+               <motion.div layoutId={`image-${id}`} className="w-full border rounded-lg md:m-4 p-20 flex justify-center items-center">
+                  {getAnnouncementIcon(active.icon, 64)}
               </motion.div>
 
               <div>
                 <div className="flex justify-between items-start p-4">
                   <div className="">
                     <motion.h3
-                      layoutId={`title-${active.title}-${id}`}
+                      layoutId={`title-${id}`}
                       className="font-bold text-neutral-700 "
                     >
                       {active.title}
                     </motion.h3>
                     <motion.p
-                      layoutId={`date-${active.date}-${id}`}
+                      layoutId={`date-${id}`}
                       className="text-neutral-600 "
                     >
                       {active.date}
@@ -107,9 +116,7 @@ export function ExpandableCardDemo({ cards }: any) {
                     exit={{ opacity: 0 }}
                     className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto   [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
-                    {typeof active.content === "function"
-                      ? active.content()
-                      : active.content}
+                   <Markdown className={"prose"}>{active.content}</Markdown>
                   </motion.div>
                 </div>
               </div>
@@ -120,30 +127,24 @@ export function ExpandableCardDemo({ cards }: any) {
       <ul className="max-w-2xl mx-auto w-full gap-4">
         {cards.map((card: any) => (
           <motion.div
-            layoutId={`card-${card.title}-${id}`}
-            key={`card-${card.title}-${id}`}
+            layoutId={`card-${id}`}
+            key={`card-${id}`}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col md:flex-row  justify-between items-center hover:bg-neutral-50 rounded-xl cursor-pointer"
+            className="p-4 flex flex-col md:flex-row justify-between items-center border hover:bg-neutral-50 rounded-xl cursor-pointer"
           >
-            <div className="flex gap-4 flex-col md:flex-row items-center">
-              <motion.div layoutId={`image-${card.title}-${id}`}>
-                <Image
-                  width={100}
-                  height={100}
-                  src={card.src}
-                  alt={card.title}
-                  className="h-40 w-40 md:h-14 md:w-14 rounded-lg object-cover object-top"
-                />
+            <div className="flex gap-4 flex-row items-center">
+              <motion.div layoutId={`image-${id}`} className="text-2xl md:h-14 md:w-14 flex justify-center items-center">
+                  {getAnnouncementIcon(card.icon)}
               </motion.div>
               <div className="">
                 <motion.h3
-                  layoutId={`title-${card.title}-${id}`}
+                  layoutId={`title-${id}`}
                   className="font-medium text-neutral-800  text-center md:text-left"
                 >
                   {card.title}
                 </motion.h3>
                 <motion.p
-                  layoutId={`date-${card.date}-${id}`}
+                  layoutId={`date-${id}`}
                   className="text-neutral-600  text-center md:text-left"
                 >
                   {card.date}
