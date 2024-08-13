@@ -45,7 +45,7 @@ export function HeroSlider() {
   }, []);
 
   return (
-    <section className="w-full md:mt-0 ">
+    <section className="w-full md:mt-0 -z-10 ">
       <Carousel
         setApi={setApi}
         opts={{
@@ -59,11 +59,14 @@ export function HeroSlider() {
           }),
         ]}
       >
-        <div className="flex absolute z-50 bottom-14 w-full items-center justify-center gap-2">
-            <span className={`w-3 h-3 block rounded-full ${current == 1 ? 'bg-white' :'bg-[#ffffff48]'}`}></span>
-            <span className={`w-3 h-3 block rounded-full ${current == 2 ? 'bg-white' :'bg-[#ffffff48]'}`}></span>
-            <span className={`w-3 h-3 block rounded-full ${current == 3 ? 'bg-white' :'bg-[#ffffff48]'}`}></span>
-            <span className={`w-3 h-3 block rounded-full ${current == 4 ? 'bg-white' :'bg-[#ffffff48]'}`}></span>
+        <div className="flex absolute bottom-14 w-full items-center justify-center gap-2">
+          {Array(images.length +1).fill(0).map((_, index) => (
+            <button
+              key={index}
+              onClick={() => api.scrollTo(index)}
+              className={`w-3 h-3 block rounded-full ${current == index+1 ? 'bg-white' :'bg-[#ffffff48]'}`}
+            ></button>
+          ))}
             </div>
         <CarouselContent>
           
