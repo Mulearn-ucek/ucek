@@ -15,3 +15,9 @@ Disclosures
 ## Accreditation Status
 
 * [Accreditation Report](/docs/accr.pdf)
+
+## Orders and Regulations
+
+* [University Grants Commission (Prevention, prohibition and redressal of sexual harassment of women employees and students in higher educational institutions) Regulations, 2015](/docs/ugc_regulations.pdf)
+* [Implementation of the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013](/docs/mwcd_order.pdf)
+
