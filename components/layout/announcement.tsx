@@ -45,7 +45,7 @@ const Announcement = () => {
         <h2 className="text-[2rem] font-bold flex items-center mb-6">
           <span className="w-2 h-6 bg-blue-500 mr-2"></span> Announcements
         </h2>
-        {loading ? <Skeleton className="w-[400px] h-[16rem] rounded-lg bg-[#e7e7e7dc]" /> :
+        {loading ? <Skeleton className="w-full h-24 rounded-lg bg-[#e7e7e7dc]" /> :
         cards.length == 0? <div className="flex justify-center items-center flex-col gap-2"> <BellOff size={44}/> No Announcements so far.</div> : <ExpandableCard cards={cards} />}
       </div>
 

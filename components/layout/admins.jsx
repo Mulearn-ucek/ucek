@@ -10,13 +10,6 @@ import Registrar from "@/public/img/administrative/registrar.jpg";
 const data = {
   administrationPanel: [
     {
-      id: 1,
-      src: Principal,
-      name: "Dr. Bisharathu Beevi A",
-      position: "Principal",
-      org: "University College of Engineering",
-    },
-    {
       id: 2,
       src: Chancellor,
       name: "Shri. Arif Muhammed Khan",
@@ -44,6 +37,13 @@ const data = {
       position: "Registrar",
       org: "University of Kerala",
     },
+    {
+      id: 1,
+      src: Principal,
+      name: "Dr. Bisharathu Beevi A",
+      position: "Principal",
+      org: "University College of Engineering",
+    },
   ],
 };
 
@@ -53,13 +53,13 @@ const AdministrationPanel = () => {
       <h2 className="text-2xl md:text-[2.6rem] ml-4 md:ml-20 font-bold mb-6 flex items-center">
         <span className="w-2 h-6 bg-blue-500 mr-2"></span> Administration Panel
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 py-10 px-4 md:px-20 justify-items-center md:justify-items-start">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 2xl:grid-cols-5  py-10 px-4 md:px-20 justify-items-center md:justify-items-start">
         {data.administrationPanel.map((member) => (
-          <div key={member.id} className="flex justify-center flex-col w-64 h-[27rem]">
+          <div key={member.id} className="flex justify-center flex-col w-64">
             <Image
               src={member.src}
               alt={`Member ${member.id}`}
-              className="rounded-lg object-cover"
+              className="rounded-lg object-cover w-[250px] h-[250px]"
               width={250}
               height={250}
             />

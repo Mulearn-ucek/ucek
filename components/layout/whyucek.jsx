@@ -1,13 +1,13 @@
 import React from "react";
-import whybg from "@/public/img/whybg.png";
+import whybg from "@/public/img/whyucek.jpg";
 
 const WhyUcek = () => {
   return (
     <div
-      className="relative bg-cover bg-center h-screen text-white"
+      className="relative bg-cover bg-center h-screen text-white" 
       style={{ backgroundImage: `url(${whybg.src})` }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-center p-4">
+      <div className="absolute inset-0 bg-black backdrop-blur-sm bg-opacity-50 flex flex-col items-center justify-center text-white text-center p-4">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Why UCEK?</h2>
         <div className="text-white text-justify mb-3 text-sm lg:text-xl font-sans md:px-44 md:py-6">
           <p className="">

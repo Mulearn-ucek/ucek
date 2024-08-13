@@ -54,18 +54,20 @@ export async function generateMetadata({
 
 const getArticle = ({ id, section }: { id: string; section: string }) => {
   const fullPath = path.join(contentDir, section, `${id}.md`);
-  let title, content;
+  let title, content, lastUpdated;
 
   try {
     const fileContents = fs.readFileSync(fullPath, "utf8");
     title = fileContents.split("\n", 1)[0];
     content = fileContents.split("\n").slice(1).join("\n");
+    lastUpdated = fs.statSync(fullPath).mtime.toLocaleString();
   } catch (e) {
     title = "404";
     content = "Page not found. That's all we know. :-(";
+    lastUpdated = "";
   }
 
-  return { title, content } as { title: string; content: string };
+  return { title, content, lastUpdated } as { title: string; content: string, lastUpdated: string };
 };
 
 export default async function Post({
@@ -73,7 +75,7 @@ export default async function Post({
 }: {
   params: { id: string; section: string };
 }) {
-  const { title, content } = getArticle(params);
+  const { title, content, lastUpdated } = getArticle(params);
 
   return (
     <>
@@ -111,6 +113,9 @@ export default async function Post({
           </Markdown>
         )}
       </div>
+      {lastUpdated != "" && <div className="flex text-xs justify-center md:text-sm md:justify-end mr-2 mb-2 text-slate-400">
+        Last Updated: {lastUpdated}
+      </div>}
 
       <Footer />
     </>

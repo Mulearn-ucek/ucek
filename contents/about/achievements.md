@@ -1,9 +1,18 @@
 ACHIEVEMENTS
 
-<table cellpadding="8">
-<tr>
-<td></td><td style="color:#36C"><strong>Date</strong></td><td style="color:#36C"> <strong>Details</strong></td>
-</tr>
-<tr><td><img height="20" src="img/trophy.png" style="border:none; border-radius:0%; box-shadow:none;" width="20"/></td><td>2020 -</td><td>FIRST RANK -[B.TECH INFORMATION TECHNOLOGY]-ANANDAKRISHNAN R</td></tr><tr><td><img height="20" src="img/trophy.png" style="border:none; border-radius:0%; box-shadow:none;" width="20"/></td><td>2020 -</td><td>TikTik App by Ashish Sajan</td></tr><tr><td><img height="20" src="img/trophy.png" style="border:none; border-radius:0%; box-shadow:none;" width="20"/></td><td>2017-18 -</td><td>Best NSS unit, Best NSS programme officer,. Best volunteer awards</td></tr><tr><td><img height="20" src="img/trophy.png" style="border:none; border-radius:0%; box-shadow:none;" width="20"/></td><td>2018 -</td><td>Second Runner-up in Smart India Hackathon organized by AICTE</td></tr><tr><td><img height="20" src="img/trophy.png" style="border:none; border-radius:0%; box-shadow:none;" width="20"/></td><td>2015 -</td><td>EIGHTH RANK (B.TECH ELECTRONICS AND COMMUNICATION) - MR. ANEESH A S</td></tr><tr><td><img height="20" src="img/trophy.png" style="border:none; border-radius:0%; box-shadow:none;" width="20"/></td><td>2015 -</td><td>FIRST RANK (B.TECH INFORMATION TECHNOLOGY) - MR. KARTHIK R</td></tr><tr><td><img height="20" src="img/trophy.png" style="border:none; border-radius:0%; box-shadow:none;" width="20"/></td><td>2013 -</td><td>SECOND RANK (B.TECH COMPUTER SCIENCE AND ENGINEERING) - MS. ASWATHY S</td></tr><tr><td><img height="20" src="img/trophy.png" style="border:none; border-radius:0%; box-shadow:none;" width="20"/></td><td>2008 -</td><td>FIRST RANK (B.TECH COMPUTER SCIENCE AND ENGINEERING) - MR. SARTHAK GUPTA</td></tr><tr><td><img height="20" src="img/trophy.png" style="border:none; border-radius:0%; box-shadow:none;" width="20"/></td><td>2007 -</td><td>FIRST RANK (B.TECH COMPUTER SCIENCE AND ENGINEERING) - MS. DIVYA U S</td></tr><tr><td><img height="20" src="img/trophy.png" style="border:none; border-radius:0%; box-shadow:none;" width="20"/></td><td>2005 -</td><td>SECOND RANK (B.TECH COMPUTER SCIENCE AND ENGINEERING) - MR. HARI SANKAR S</td></tr><tr><td><img height="20" src="img/trophy.png" style="border:none; border-radius:0%; box-shadow:none;" width="20"/></td><td>2005 -</td><td>FIRST RANK (B.TECH COMPUTER SCIENCE AND ENGINEERING) - MS. DEEBU U S</td></tr><tr><td><img height="20" src="img/trophy.png" style="border:none; border-radius:0%; box-shadow:none;" width="20"/></td><td>2004 -</td><td>FIRST RANK (B.TECH COMPUTER SCIENCE AND ENGINEERING) - MR.VINEETH R PILLAI</td></tr>
-</table>
-</div>
+To be Added.
+
+|    | Date | Details |
+| --- | --- | --- |
+| 🏆 | 2020 - | FIRST RANK -\[B.TECH INFORMATION TECHNOLOGY\]-ANANDAKRISHNAN R |
+| 🏆 | 2020 - | TikTik App by Ashish Sajan |
+| 🏆 | 2017-18 - | Best NSS unit, Best NSS programme officer,. Best volunteer awards |
+| 🏆 | 2018 - | Second Runner-up in Smart India Hackathon organized by AICTE |
+| 🏆 | 2015 - | EIGHTH RANK (B.TECH ELECTRONICS AND COMMUNICATION) - MR. ANEESH A S |
+| 🏆 | 2015 - | FIRST RANK (B.TECH INFORMATION TECHNOLOGY) - MR. KARTHIK R |
+| 🏆 | 2013 - | SECOND RANK (B.TECH COMPUTER SCIENCE AND ENGINEERING) - MS. ASWATHY S |
+| 🏆 | 2008 - | FIRST RANK (B.TECH COMPUTER SCIENCE AND ENGINEERING) - MR. SARTHAK GUPTA |
+| 🏆 | 2007 - | FIRST RANK (B.TECH COMPUTER SCIENCE AND ENGINEERING) - MS. DIVYA U S |
+| 🏆 | 2005 - | SECOND RANK (B.TECH COMPUTER SCIENCE AND ENGINEERING) - MR. HARI SANKAR S |
+| 🏆 | 2005 - | FIRST RANK (B.TECH COMPUTER SCIENCE AND ENGINEERING) - MS. DEEBU U S |
+| 🏆 | 2004 - | FIRST RANK (B.TECH COMPUTER SCIENCE AND ENGINEERING) - MR.VINEETH R PILLAI |
