@@ -42,11 +42,11 @@ const Nav = () => {
       title: "Achievements",
       link: "/about/achievements",    
     },
-    {
-      id: 8,
-      title: "Image Gallery",
-      link: "",
-    },
+    // {
+    //   id: 8,
+    //   title: "Image Gallery",
+    //   link: "",
+    // },
     {
       id: 1,
       title: "Contact Us",
@@ -133,7 +133,7 @@ const Nav = () => {
             </button>
             <div
               ref={setDropDownRef(1)}
-              className={`absolute left-0 mt-2 w-40 bg-white border rounded-xl md:text-[14px] text-[12px] z-10 shadow-lg ${
+              className={`absolute left-0 mt-2 w-40 bg-white border rounded-xl md:text-[14px] text-[12px] z-30 shadow-lg ${
                 openDropdown === "cells" ? "block" : "hidden"
               }`}
             >
@@ -201,7 +201,7 @@ const Nav = () => {
             </button>
             <div
               ref={setDropDownRef(2)}
-              className={`origin-top-right absolute -right-10 md:right-0 md:left-0 mt-2 w-72 bg-white border rounded-xl md:text-[14px] text-[12px] z-10 shadow-lg ${
+              className={`origin-top-right absolute -right-10 md:right-0 md:left-0 mt-2 w-72 bg-white border rounded-xl md:text-[14px] text-[12px] z-30 shadow-lg ${
                 openDropdown === "departments" ? "block" : "hidden"
               }`}
             >
@@ -259,7 +259,7 @@ const Nav = () => {
             </button>
             <div
               ref={setDropDownRef(3)}
-              className={`absolute -right-10 md:left-0 mt-2 w-44 bg-white border rounded-xl md:text-[14px] text-[12px] z-10 shadow-lg ${
+              className={`absolute -right-10 md:left-0 mt-2 w-44 bg-white border rounded-xl md:text-[14px] text-[12px] z-30 shadow-lg ${
                 openDropdown === "clubs" ? "block" : "hidden"
               }`}
             >
@@ -333,8 +333,8 @@ const Nav = () => {
               </svg>
             </button>
             <div
-              ref={setDropDownRef(3)}
-              className={` absolute right-0 mt-2 w-40 bg-white border rounded-xl md:text-[14px] text-[12px] z-10 shadow-lg ${
+              ref={setDropDownRef(4)}
+              className={` absolute right-0 mt-2 w-40 bg-white border rounded-xl md:text-[14px] text-[12px] z-30 shadow-lg ${
                 openDropdown === "about" ? "block" : "hidden"
               }`}
             >

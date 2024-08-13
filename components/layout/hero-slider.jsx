@@ -59,7 +59,7 @@ export function HeroSlider() {
           }),
         ]}
       >
-        <div className="flex absolute bottom-14 w-full items-center justify-center gap-2">
+        <div className="flex absolute bottom-14 z-10 w-full items-center justify-center gap-2">
           {Array(images.length +1).fill(0).map((_, index) => (
             <button
               key={index}
