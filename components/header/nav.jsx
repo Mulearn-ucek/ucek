@@ -82,7 +82,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <header className="bg-white border-b z-30 h-[205px] flex items-center flex-col">
+    <header className="bg-white border-b z-30 flex items-center flex-col">
       <div className="w-full py-4 px-2 md:px-16 md:h-[155px] flex flex-col md:flex-row items-center justify-between">
         <Link href="/">
         <div className="flex items-center space-x-4">
@@ -391,7 +391,7 @@ const Nav = () => {
           </div>
         </nav>
       </div>
-      <div className="md:h-[50px] bg-white border-t-[1.8px] border-[#2D3E50] w-full flex items-center ">
+      <div className="md:h-[50px] z-10 pb-2 sm:pb-0 bg-white border-t-[1.8px] border-[#2D3E50] w-full flex items-center ">
         <div className="w-full px-5 md:px-4 md:py-0 mt-2 md:mt-0 flex flex-wrap justify-center md:justify-evenly ">
           {menu.map((item, idx) => (
             <div key={`p${idx}`} className="flex items-center">
