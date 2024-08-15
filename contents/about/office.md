@@ -18,8 +18,10 @@ The Administrative Office of University College of Engineering works under the d
 
 | **#** | **Name of Staff** | **Designation** | **Contact Number** |
 | --- | --- | --- | --- |
-| 1   | Smt.P.Patritia | Assistant Registrar | 9497292993 |
-| 2   | Sri.Arun Kumar S | Administrative Officer | 8086628033 |
-| 2   | Smt.Manju Rani V S | Office Superintendent | 9605659149 |
-| 2   | Smt.Sarika S S | Assistant | 9605190861 |
-| 2   | Smt.Athira K R | Assistant | 9562313858 |
+| 1   | K.P.Mini | Assistant Registrar | |
+| 2   | Sheeja Kumari. T | Administrative Officer | |
+| 3   | Saritha B | Office Superintendent | |
+| 4   | Athira K R | Assistant | |
+| 5   | Anu Prasad J | Assistant | |
+| 6   | Sheeba Aman | Assistant | |
+| 7   | Revathy P.M | Assistant | |
