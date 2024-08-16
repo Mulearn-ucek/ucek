@@ -112,11 +112,11 @@ export default async function Post({
             {content}
           </Markdown>
         )}
+
       </div>
       {lastUpdated != "" && <div className="flex text-xs justify-center md:text-sm md:justify-end mr-2 mb-2 text-slate-400">
         Last Updated: {lastUpdated}
       </div>}
-
       <Footer />
     </>
   );

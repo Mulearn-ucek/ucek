@@ -263,14 +263,14 @@ const Nav = () => {
                 openDropdown === "clubs" ? "block" : "hidden"
               }`}
             >
-              <Link
+               <Link
                 href="#"
-                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 hover:rounded-b-xl gap-2 items-center py-3"
               >
-              <Image src={"/logos/mulearn.png"} width={30} height={30} alt="logo"/>
-                Mulearn UCEK
+                 <Image src={"/logos/foss.png"} width={30} height={30} alt="logo"/>
+                FOSS Club
               </Link>
-              
+
               <Link
                 href="#"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
@@ -296,15 +296,21 @@ const Nav = () => {
                 href="#"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
               >
+              <Image src={"/logos/mulearn.png"} width={30} height={30} alt="logo"/>
+                Mulearn UCEK
+              </Link>
+              <Link
+                href="#"
+                className="flex px-4 text-gray-600 hover:bg-gray-100 gap-2 items-center py-3"
+              >
                  <Image src={"/logos/nss.png"} width={30} height={30} alt="logo"/>
                 NSS
               </Link>
               <Link
-                href="#"
+                href="/clubs/tourism"
                 className="flex px-4 text-gray-600 hover:bg-gray-100 hover:rounded-b-xl gap-2 items-center py-3"
               >
-                 <Image src={"/logos/foss.png"} width={30} height={30} alt="logo"/>
-                FOSS Club
+                Tourism Club
               </Link>
               
             </div>
