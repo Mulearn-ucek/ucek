@@ -5,6 +5,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { BellPlus, BookUser, CalendarDays, Pointer, ScrollText } from "lucide-react";
 import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 
 function getAnnouncementIcon(announcementType: string, size: number = 32) {
   switch (announcementType) {
@@ -116,7 +118,8 @@ export function ExpandableCard({ cards }: any) {
                     exit={{ opacity: 0 }}
                     className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto   [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
-                   <Markdown className={"prose"}>{active.content}</Markdown>
+                   <Markdown  remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeRaw]}  className={"prose"}>{active.content}</Markdown>
                   </motion.div>
                 </div>
               </div>
