@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://uck.ac.in
+
+# Sitemaps
+Sitemap: https://uck.ac.in/sitemap.xml
