@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import Logo from "@/public/img/logo.png";
+import Logo from "@/public/img/logo.svg";
 import {
   BookOpenCheck,
   BusFront,
@@ -85,13 +85,13 @@ const Nav = () => {
     <header className="bg-white border-b z-30 flex items-center flex-col">
       <div className="w-full py-4 px-2 md:px-16 md:h-[155px] flex flex-col md:flex-row items-center justify-between">
         <Link href="/">
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 ">
           <Image
             width={85}
             height={85}
             src={Logo.src}
             alt="University of Kerala Logo"
-            className="h-[50px] w-[50px] md:h-[85px] md:w-[85px]"
+            className="h-[50px] w-[50px] md:h-[85px] md:w-[85px] text-black"
           />
           <div>
             <h1 className="text-lg font-bold text-[17.99px] md:text-[27px]">

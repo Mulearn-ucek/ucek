@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Loading from "./loading";
 import React from "react";
-import { Analytics } from "@vercel/analytics/react"
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "University College of Engineering, Kariavattom",
+  keywords: "UCEK, UCEKariavattom, UCEKariavattom, UCEK, University college of engineering Kariavattom, University Engineering College, Top Engineering College in trivandrum, engineering in trivandrum, keam, kerala engineering",
   description: "Official website of the University College of Engineering, Kariavattom",
   icons: [
     {
@@ -39,10 +39,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}> 
-        <Analytics/>
-        {children} 
-      </body>
+      <body className={inter.className}>{children}</body>
+      <GoogleAnalytics gaId="G-JW5TYZ3JC2" />
     </html>
   );
 }
