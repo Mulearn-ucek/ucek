@@ -63,54 +63,55 @@ const NewsEvents = () => {
           >
             {data?.map((item, index) => (
               <>
-              <div
-                key={index}
-                className="w-[300px] h-[16rem] p-4 bg-white rounded-lg shadow-md border "
-              >
-                <div className="flex items-center justify-between">
-                  <span
-                    className={`px-2 py-1 w-24 flex justify-center rounded-full text-white text-sm font-semibold mb-4 ${"bg-red-500"}`}
-                  ></span>
+                <div
+                  key={index}
+                  className="w-[300px] h-[16rem] p-4 bg-white rounded-lg shadow-md border"
+                >
+                  <div className="flex items-center justify-between ">
+                    <span
+                      className={`px-2 py-1 w-24 flex justify-center rounded-full text-white text-sm font-semibold mb-4 ${"bg-red-500"}`}
+                    ></span>
+                    <Image
+                      src={resolveClubIcon(item[6])}
+                      width={35}
+                      height={35}
+                      alt="Club Icon"
+                      className="prevent-select"
+                    />
+                  </div>
+                  <div className="w-full flex items-center gap-5">
+                    <p className="text-lg font-semibold mb-2">{item[3]}</p>
+                    <a href={`https://eventsatucek.vercel.app/e/${item[1]}`}>
+                      <SquareArrowOutUpRight size={15} className="mb-2" />
+                    </a>
+                  </div>
                   <Image
-                    src={resolveClubIcon(item[6])}
-                    width={35}
-                    height={35}
-                    alt="Club Icon"
-                  />
-                </div>
-                <div className="w-full flex items-center gap-5">
-                  <p className="text-lg font-semibold mb-2">{item[3]}</p>
-                  <a href={`https://eventsatucek.vercel.app/e/${item[1]}`}>
-                    <SquareArrowOutUpRight size={15} className="mb-2" />
-                  </a>
-                </div>
-                <Image
-                  width={50}
-                  height={50}
-                  referrerPolicy={"no-referrer"}
-                  src={getImgLink(item[5])}
-                  alt="Event Poster"
-                  className="rounded-lg w-[50px] h-[50px]"
-                ></Image>
-                {item[4] && (
-                  <p className="text-gray-500 mb-2 text-[15px] line-clamp-2 overflow-hidden pt-2">
-                    {item[4]}
-                  </p>
-                )}
+                    width={50}
+                    height={50}
+                    referrerPolicy={"no-referrer"}
+                    src={getImgLink(item[5])}
+                    alt="Event Poster"
+                    className="rounded-lg w-[50px] h-[50px] prevent-select"
+                  ></Image>
+                  {item[4] && (
+                    <p className="text-gray-500 mb-2 text-[15px] line-clamp-2 overflow-hidden pt-2">
+                      {item[4]}
+                    </p>
+                  )}
 
-                {item[7] && (
-                  <div className="flex items-center text-gray-500 text-sm mb-1 gap-2">
-                    <CalendarDays size={18} />
-                    {moment(item[7], "DD/MM/YYYY HH:mm:ss")?.format("MMM Do")}
-                  </div>
-                )}
-                {item[7] && (
-                  <div className="flex items-center text-gray-500 text-sm mb-4 gap-2">
-                    <Clock size={18} />
-                    {moment(item[7], "DD/MM/YYYY HH:mm:ss")?.format("h:mm a")}
-                  </div>
-                )}
-              </div>
+                  {item[7] && (
+                    <div className="flex items-center text-gray-500 text-sm mb-1 gap-2">
+                      <CalendarDays size={18} />
+                      {moment(item[7], "DD/MM/YYYY HH:mm:ss")?.format("MMM Do")}
+                    </div>
+                  )}
+                  {item[7] && (
+                    <div className="flex items-center text-gray-500 text-sm mb-4 gap-2">
+                      <Clock size={18} />
+                      {moment(item[7], "DD/MM/YYYY HH:mm:ss")?.format("h:mm a")}
+                    </div>
+                  )}
+                </div>
               </>
             ))}
           </div>

@@ -14,7 +14,7 @@ const Footer = () => {
               height={85}
               src={logo.src}
               alt="University of Kerala Logo"
-             className="h-[50px] w-[50px] md:h-[62px] md:w-[62px]"
+             className="h-[50px] w-[50px] md:h-[62px] md:w-[62px] prevent-select"
             />
             <div className="text-center md:text-left">
               <h1 className="text-lg font-bold">

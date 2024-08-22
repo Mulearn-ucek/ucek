@@ -59,7 +59,7 @@ const AdministrationPanel = () => {
             <Image
               src={member.src}
               alt={`Member ${member.id}`}
-              className="rounded-lg object-cover w-[250px] h-[250px]"
+              className="rounded-lg object-cover w-[250px] h-[250px] prevent-select"
               width={250}
               height={250}
             />
