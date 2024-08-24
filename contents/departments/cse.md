@@ -25,3 +25,5 @@ To be in the frontier of the Computer Science and Engineering and to produce glo
 | Program | Type | Duration |
 |--|--|--|
 | B.Tech| Full-time | 4 years |
+
+For more info regarding Faculties visit [CSE Faculties](/faculties/cse)

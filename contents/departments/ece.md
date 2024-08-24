@@ -5,3 +5,5 @@ Department of Electronics & Communication Engineering
 <p>The department has an intake of 60 students per year in four year undergraduate course. The department consists of highly qualified, dedicated and experienced faculty members who possess extreme passion for teaching, aim at educating and training students with sound knowledge and awareness in the latest trend in electronics, communication and information technology.</p>
 
 <p>For exploring the fast developing engineering field to the maximum extent possible, this department has taken all measures to make available the best facilities.</p>
+
+For more info regarding Faculties visit [ECE Faculties](/faculties/ece)

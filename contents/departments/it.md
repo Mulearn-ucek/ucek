@@ -14,3 +14,5 @@ To impart skills to come up with socially acceptable solutions to real world pro
 | Program | Type | Duration |
 |--|--|--|
 | B.Tech| Full-time | 4 years |
+
+For more info regarding Faculties visit [IT Faculties](/faculties/it)

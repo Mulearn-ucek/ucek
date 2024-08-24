@@ -3,14 +3,10 @@ import React, { useEffect, useRef, useState } from "react";
 import Logo from "@/public/img/logo.svg";
 import {
   BookOpenCheck,
-  BusFront,
   CodeXml,
   Cpu,
   MoreHorizontal,
   Network,
-  NotebookPen,
-  SwatchBook,
-  Utensils,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
@@ -23,32 +19,32 @@ const Nav = () => {
   const pathname = usePathname();
   const menu = [
     {
-      id: 2,
+      id: 1,
       title: "Admissions",
       link: "/admissions/btech",
     },
     {
-      id: 3,
+      id: 2,
       title: "Placements",
       link: "/cells/placement",
     },
     {
-      id: 6,
+      id: 3,
       title: "Grievance Redressal",
       link: "/cells/grievance",
     },
     {
-      id: 7,
+      id: 4,
       title: "Achievements",
       link: "/about/achievements",    
     },
-    // {
-    //   id: 8,
-    //   title: "Image Gallery",
-    //   link: "",
-    // },
     {
-      id: 1,
+      id: 5,
+      title: "Faculties",
+      link: "/faculties",
+    },
+    {
+      id: 6,
       title: "Contact Us",
       link: "/about/contact",
     },
@@ -91,7 +87,7 @@ const Nav = () => {
             height={85}
             src={Logo.src}
             alt="University of Kerala Logo"
-            className="h-[50px] w-[50px] md:h-[85px] md:w-[85px] text-black"
+            className="h-[50px] w-[50px] md:h-[85px] md:w-[85px] text-black prevent-select"
           />
           <div>
             <h1 className="text-lg font-bold text-[17.99px] md:text-[27px]">
