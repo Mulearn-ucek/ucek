@@ -6,4 +6,7 @@ General Departments
 
 <p>The department has a team of well qualified, experienced and highly motivated faculty members devoted to the overall development of the students. As a supporting department, the faculty cooperates in all curricular and extracurricular activities also.</p>
 
-For more info regarding Faculties visit [Genral Science Faculties](/faculties/gen)
+<h2><p align="center">
+<a href="/faculties/gen">View Faculty</a>
+</p>
+</h2>
