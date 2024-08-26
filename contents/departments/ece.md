@@ -6,4 +6,7 @@ Department of Electronics & Communication Engineering
 
 <p>For exploring the fast developing engineering field to the maximum extent possible, this department has taken all measures to make available the best facilities.</p>
 
-For more info regarding Faculties visit [ECE Faculties](/faculties/ece)
+<h2><p align="center">
+<a href="/faculties/ece">View Faculty</a>
+</p>
+</h2>
