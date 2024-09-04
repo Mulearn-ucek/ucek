@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "metadata": "node metadata.mjs",
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
