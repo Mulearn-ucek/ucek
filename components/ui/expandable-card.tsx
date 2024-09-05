@@ -17,10 +17,18 @@ function getAnnouncementIcon(announcementType: string, size: number = 32) {
     case "News":
       return <BellPlus size={size}/>;
     case "Admission":
-      return <BookUser  size={size}/>;
+      return <BellPlus  size={size}/>;
     default:
       return <BellPlus size={size}/>;
   }
+}
+
+function getDateTime(timestamp: string) {
+  const [datePart, timePart] = timestamp.split(' ');
+    const [month, day, year] = datePart.split('/').map(Number);
+    const [hours, minutes, seconds] = timePart.split(':').map(Number);
+    
+    return new Date(year, month - 1, day, hours, minutes, seconds);
 }
 
 export function ExpandableCard({ cards }: any) {
@@ -87,7 +95,7 @@ export function ExpandableCard({ cards }: any) {
             <motion.div
               layoutId={`card-${id}`}
               ref={ref}
-              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white  sm:rounded-3xl overflow-hidden"
+              className="w-full  md:max-w-[60%] h-full md:h-fit md:max-h-[90%] md:justify-center items-center flex flex-col bg-white  sm:rounded-3xl overflow-hidden"
             >
                <motion.div layoutId={`image-${id}`} className="w-full border rounded-lg md:m-4 p-20 flex justify-center items-center">
                   {getAnnouncementIcon(active.icon, 64)}
@@ -104,9 +112,9 @@ export function ExpandableCard({ cards }: any) {
                     </motion.h3>
                     <motion.p
                       layoutId={`date-${id}`}
-                      className="text-neutral-600 "
+                      className="text-neutral-600 text-sm"
                     >
-                      {active.date}
+                     Posted on {getDateTime(active.date).toLocaleDateString()}
                     </motion.p>
                   </div>
                 </div>
@@ -116,10 +124,9 @@ export function ExpandableCard({ cards }: any) {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto   [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                    className="text-neutral-600 text-xs md:text-sm lg:text-base  md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto   [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
-                   <Markdown  remarkPlugins={[remarkGfm]}
-            rehypePlugins={[rehypeRaw]}  className={"prose"}>{active.content}</Markdown>
+                   <Markdown  remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}  className={"prose"}>{active.content}</Markdown>
                   </motion.div>
                 </div>
               </div>
@@ -136,21 +143,21 @@ export function ExpandableCard({ cards }: any) {
             className="p-4 flex flex-col md:flex-row justify-between items-center border hover:bg-neutral-50 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-row items-center">
-              <motion.div layoutId={`image-${id}`} className="text-2xl md:h-14 md:w-14 flex justify-center items-center">
+              <motion.div layoutId={`image-${id}`} className={`text-2xl md:h-14 md:w-14 flex justify-center items-center ${card.important ? 'animate-pulse' : ''}`}>
                   {getAnnouncementIcon(card.icon)}
               </motion.div>
               <div className="">
                 <motion.h3
                   layoutId={`title-${id}`}
-                  className="font-medium text-neutral-800  text-center md:text-left"
+                  className={`font-medium text-neutral-800  text-center md:text-left ${card.important ? 'text-red-500 animate-' : ''}`} 
                 >
                   {card.title}
                 </motion.h3>
                 <motion.p
                   layoutId={`date-${id}`}
-                  className="text-neutral-600  text-center md:text-left"
+                  className="text-neutral-600  text-sm text-center md:text-left"
                 >
-                  {card.date}
+                  Posted on {getDateTime(card.date).toLocaleDateString()}
                 </motion.p>
               </div>
             </div>
