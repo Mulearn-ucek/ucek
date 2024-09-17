@@ -25,3 +25,9 @@ The grievances at departmental level are dealt by the concerned mentors and clas
 6 | Smt. Anu S Ram | 9562212747
 7 | Smt. Asha K S | 9496252692
 8 | Smt. Valsala Kumari K S | 9496395554
+
+
+<h2><p align="center">
+<a href="https://forms.gle/xLgfCA5zfd5tr24D8">Grievance Redressal Form for Students</a>
+</p>
+</h2>

@@ -28,3 +28,10 @@ UCEK constituted SC/ST Committee to help the SC/ST categories integrate with oth
 | 4 | Sri. Sreejith SN | 9633312443
 | 5 | Sri. Biju R | 9496394782
 | 6 | Sri. Sreeraj S | 9961260387
+
+
+
+<h2><p align="center">
+<a href="https://forms.gle/CaHq3itdimgEcCFQ6">Grievance Redressal Form for SC/ST/OBC</a>
+</p>
+</h2>

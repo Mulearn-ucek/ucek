@@ -26,4 +26,7 @@ To be in the frontier of the Computer Science and Engineering and to produce glo
 |--|--|--|
 | B.Tech| Full-time | 4 years |
 
-For more info regarding Faculties visit [CSE Faculties](/faculties/cse)
+<h2><p align="center">
+<a href="/faculties/cse">View Faculty</a>
+</p>
+</h2>

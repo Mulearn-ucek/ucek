@@ -40,6 +40,7 @@ export default async function Post() {
    </div>
     <div className='z-20 p-5 ml-10 flex justify-center flex-col '>
       {sections.map((section) => {
+        if(section == "metadata.json") return
         const articles = fs.readdirSync(path.join(contentDir, section))
           return <div className='' key={section}>
               <h1 className='text-2xl font-bold'>{section}</h1>

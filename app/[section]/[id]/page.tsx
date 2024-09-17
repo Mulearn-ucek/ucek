@@ -18,6 +18,7 @@ export async function generateStaticParams() {
   const sections = fs.readdirSync(contentDir);
 
   const paths = sections.flatMap((section) => {
+    if (section == "metadata.json") return
     const articles = fs.readdirSync(path.join(contentDir, section));
     return articles.map((article) => {
       return {
@@ -60,7 +61,16 @@ const getArticle = ({ id, section }: { id: string; section: string }) => {
     const fileContents = fs.readFileSync(fullPath, "utf8");
     title = fileContents.split("\n", 1)[0];
     content = fileContents.split("\n").slice(1).join("\n");
-    lastUpdated = fs.statSync(fullPath).mtime.toLocaleString();
+
+    // Get last updated date for metadata.json
+    const metadataPath = path.join(contentDir, "metadata.json");
+    const metadata = JSON.parse(fs.readFileSync(metadataPath, "utf8"));
+    lastUpdated = new Date(metadata[section][`${id}.md`]).toLocaleString('en-IN', {
+      day: '2-digit',
+      month: 'short',
+      year: 'numeric'
+    });
+
   } catch (e) {
     title = "404";
     content = "Page not found. That's all we know. :-(";

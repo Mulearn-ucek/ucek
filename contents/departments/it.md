@@ -15,4 +15,7 @@ To impart skills to come up with socially acceptable solutions to real world pro
 |--|--|--|
 | B.Tech| Full-time | 4 years |
 
-For more info regarding Faculties visit [IT Faculties](/faculties/it)
+<h2><p align="center">
+<a href="/faculties/it">View Faculty</a>
+</p>
+</h2>
